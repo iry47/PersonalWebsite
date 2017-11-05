@@ -1,4 +1,7 @@
 # PersonalWebsite
-My first project and marketing tool
-First edits. Feeling like a newbie and have a lot to review but even more to learn.
-Good to start!
+My first project and marketing tool.
+
+## Why?
+
+It's time to start my career and I've always loved to code. I want to grow my portfolio and get a job!
+
