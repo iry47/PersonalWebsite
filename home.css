@@ -1,0 +1,17 @@
+.main-navigation {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    left: 0;
+    max-width: 100%;
+    margin-right: 10px;
+    text-align: center;
+    background: #fff;
+}
+
+.main-navigation a {
+    display: inline-flex;
+    padding-right: 5%;
+    font-family: optima;
+    font-size: 14px;
+}
