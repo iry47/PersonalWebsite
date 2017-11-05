@@ -1,5 +1,5 @@
 # PersonalWebsite
-My first project and marketing tool.
+A personal project and marketing tool.
 
 ## Why?
 
