@@ -1,17 +1,96 @@
+
 .main-navigation {
     position: fixed;
-    top: 20px;
+    top: 0px;
     width: 100%;
     left: 0;
     max-width: 100%;
     margin-right: 10px;
-    text-align: center;
     background: #fff;
+    text-align: center;
 }
 
-.main-navigation a {
+.main-navigation ul {
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.main-navigation ul li a {
     display: inline-flex;
-    padding-right: 5%;
+    padding: 10px;
     font-family: optima;
-    font-size: 14px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.main-navigation ul li a:hover {
+    border-bottom: 2px solid #878387;
+}
+
+.main-navigation ul li a span {
+    margin-left: 7px;
+}
+
+#miniMenu {
+    display: none;
+    font-size: 36px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#container {
+    margin: 20px;
+}
+
+#container > section {
+    font-family: optima;
+    padding-top: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container > section img {
+    max-height: 100px;
+}
+
+.contactForm div {
+    margin-top: 10px;
+}
+
+.contactForm label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+#sendBtn {
+    /* something weird is going on with bootstrap and margin here */
+    margin-left: 45px;
+}
+
+
+@media screen and (max-width:480px){
+    #miniMenu {
+/*        position: fixed;*/
+        display: block;
+        float: right;
+    }
+    
+    .main-navigation {
+        display: none;
+    }
+    
+    .main-navigation ul li{
+        width: 100%;
+        
+    }
 }
