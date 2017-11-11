@@ -8,7 +8,7 @@ $(document).ready(function () {
     function getLanguage() {
         (localStorage.getItem('languages') == null) ? setLanguage('en') : false;
         $.ajax({ 
-            url:  '/languages/' +  localStorage.getItem('languages') + '.json', 
+            url:  '/PersonalWebsite/languages/' +  localStorage.getItem('languages') + '.json', 
             dataType: 'json', async: false, dataType: 'json', 
             success: function (lang) { language = lang } });
     }
