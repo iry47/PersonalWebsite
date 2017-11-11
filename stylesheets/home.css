@@ -1,0 +1,298 @@
+
+.main-navigation {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    max-width: 100%;
+    margin-right: 10px;
+    background: #fff;
+    text-align: center;
+}
+
+.main-navigation ul {
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.main-navigation ul li a {
+    display: inline-flex;
+    padding: 10px;
+    font-family: optima;
+    font-size: 16px;
+    text-decoration: none;
+    color: #34495E;
+
+}
+
+.main-navigation ul li a:hover {
+    color: #1ABC9C;
+    border-bottom: 2px solid #1ABC9C;
+}
+
+.main-navigation ul li a span {
+    margin-left: 7px;
+}
+
+/* To look at
+.main-navigation ul li a i {
+    vertical-align:!important;
+}
+*/
+
+#miniMenu {
+    display: none;
+    font-size: 36px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#languageSelect {
+    display: inline-block;
+    float: left;
+    max-width: 200px;
+}
+
+#container {
+    padding: 20px;
+}
+
+#container > section {
+    font-family: optima;
+    min-height: 80vh;
+/*    max-width: 100vh;*/
+    overflow: hidden;
+}
+
+.sectionDiv {
+    opacity: 0;
+}
+
+h2 {
+    font-size: 28px !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    margin-top: 0px !important;
+}
+
+#about {
+    padding-top: 25vh;
+}
+#aboutText {
+    max-width: 90vh;
+    float: left;
+    margin-right: 40px;
+}
+
+#aboutText h1 {
+    margin: 0px;
+    font-size: 48px;
+    display: none;
+}
+
+#aboutText p {
+    font-size: 20px;;
+    padding-top: 10px;
+    display: none;
+}
+
+#aboutImg {
+    max-width: 200px;
+    float: left;
+    display: none;
+}
+
+#meImg{
+    width: 100%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.qualifications {
+    display: inline-block;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.qualifications p{
+    margin-bottom: 0px;
+}
+
+#queensFigure {
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+#degreesDiv {
+    display: inline-block;
+    margin-right: 50px;
+    float:left;
+    clear: left;
+}
+#degreesDiv img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    display: block;
+}
+
+.languagesDiv {
+    min-width: 200px;
+    float:left;
+}
+
+.languagesDiv article > div {
+    display: block;
+    margin-right: 40px;
+    width: 20vw;
+}
+
+#experience {
+    min-height: 90vh !important;
+}
+
+.positions{
+    display: inline-block;
+    float: left;
+    margin-right: 40px;
+}
+
+#positionsTable div {
+    background-color: #1ABC9C;
+    margin: 2px;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right 10px;
+}
+
+.experienceImg {
+    display: inline-block;
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experienceImg img {
+    width: 100%;
+}
+
+/* Trying to fix this fucking non-disapearing cunt fucker
+.form-group {
+    display: block !important;
+}
+*/
+
+.thingsUsed {
+    display: inline-block;
+    float: left;
+}
+
+#virtualLanguages {
+    display: inline-block;
+    float: left;
+    max-width: 150px;
+    margin-right: 40px;
+}
+
+#frameworks {
+    display: block;
+    float: left;
+    clear: right;
+    max-width: 150px;
+}
+
+#moreInfo {
+    display: block;
+    float: left;
+    max-width: 500px;
+    margin-left: 10vh;
+}
+
+#moreInfo p {
+    font-size: 16px;
+}
+
+.checkbox {
+    display: block;
+}
+
+#contact {
+    min-height: 100vh;
+}
+
+#contactArticle {
+    max-width: 500px;
+}
+
+#contactForm {
+    max-width: 90vh;
+}
+
+#contactForm div {
+    margin: 10px;
+}
+
+#contactName {
+    max-width: 300px;
+}
+
+#contactEmail {
+    max-width: 300px;
+}
+
+#msg.formcontrol {
+    resize: both !important;
+}
+
+#sendBtn {
+    float:left;
+    clear: both !important;
+}
+
+#linkedin {
+    width: 200px;
+}
+
+#linkedinImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+/* How menu will react to small screens. */
+@media screen and (max-width:480px){
+    #miniMenu {
+        display: block;
+        float: right;
+    }
+    
+    .main-navigation {
+        display: none;
+        top: 70px;
+        position: absolute;
+        background-color: rgba(300,300,300,0.9);
+    }
+    
+    .main-navigation ul li{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #878387
+        
+    }
+}
+
+@media screen and (min-width: 490px) {
+    .main-navigation {
+        display: inline-block !important;
+    }
+}
