@@ -10,7 +10,7 @@
         <!-- Fav Icon -->
 
         <!-- Stylesheets -->
-        <link rel=stylesheet href="/stylesheets/home.css">
+        <link rel=stylesheet href="/docs/stylesheets/home.css">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -35,25 +35,25 @@
                         <li>
                             <a href="#about">
                                 <i class="fa fa-info" aria-hidden="true"></i>
-                                <span>About</span> 
+                                <span id="aboutMenuText">About</span> 
                             </a>
                         </li>
                         <li>
                             <a href="#qualifications">
                                 <i class="fa fa-graduation-cap"></i>
-                                <span>Qualifications</span>
+                                <span id="qualMenuText">Qualifications</span>
                             </a>
                         </li>
                         <li>
                             <a href="#experience">
                                 <i class="fa fa-folder-open"></i>
-                                <span>Experience</span>
+                                <span id="expMenuText">Experience</span>
                             </a>
                         </li>
                         <li>
                             <a href="#contact">
                                 <i class="fa fa-envelope"></i>
-                                <span>Contact</span>
+                                <span id="contactMenuText">Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -68,7 +68,7 @@ Kind of boring so far...not sure what else I can do other than a nice picture of
                 <div id="aboutDiv">
                     <div id="aboutText">
                         <h1 id="welcome">Welcome!</h1>
-                        <p id="aboutArticle">My name is Ryan. I'm a computer programer, language enthuisiast and avid traveller. Currently, but not limited to, working as a front end web developer - this site is probably your introduction to my work. My portfolio is growing rapidly and I'd love to include you in it! </p>
+                        <p id="aboutArticle">My name is Ryan. I'm a computer programer, language enthuisiast and avid traveller. Currently, but not limited to, working as a front end web developer - this site is probably your introduction to my work. My portfolio is growing rapidly and I'd love to include you in it!</p>     
                     </div>
                     <div id="aboutImg">
                         <img id="meImg" src="/images/IMG.jpg" alt="Me!"/>
@@ -80,7 +80,7 @@ Idea is to showcase the good stuff. Degrees, languages, anything else. Thinking 
 -->
             <section id="qualifications" class="qualifications">
                 <div id="qualificationsDiv" class="sectionDiv">
-                    <h2>Qualifications</h2>
+                    <h2 id="qualificationsTitle">Qualifications</h2>
                     <div id="degreesDiv">
                         <h3 id="degrees">Degrees</h3>
                         <article id="educationArticle">
@@ -124,11 +124,13 @@ Idea is to showcase the good stuff. Degrees, languages, anything else. Thinking 
                     </div>
                     <div id="languageSelect">
                         <label>Choose your Language</label>
-                        <select>
+                        <div>
+                        <select id="selectLang">
                             <option id="selectEnglish" value="en">English</option>
                             <option id="selectFrench" value="fr">French</option>
                             <option id="selectSpanish" value="es">Spanish</option>
                         </select>
+                            </div>
                     </div>
                 </div>
             </section>
@@ -217,8 +219,10 @@ Standard contact form. For now...
                 <div id="contactDiv" class="sectionDiv">
                     <h2>Contact</h2>
                     <article id="contactArticle">
-                        <p id="contactText">Whether you're looking for a developer, want to meet up for a drink or anything in between - here's the place to get in contact. Looking forward to hearing from you!</p>
+                        <p id="contactText">Whether you're looking for a developer, want to meet up for a drink or anything in between - send me an email. Looking forward to hearing from you!</p>
+                        <a id="emailLink">ryan.headley@me.com</a>
                     </article>
+<!-- Form that will be implemented when server side is available
                     <form id="contactForm" class="contactForm">
                         <div id="contactName" class="input-group">
                             <span class="input-group-addon"></span>
@@ -235,10 +239,6 @@ Standard contact form. For now...
                             <button id="sendBtn" class="btn btn-hg btn-primary" type="submit">Send Email</button>
                         </div>
                     </form>
-<!--
-                    <div id="linkedin">
-                        <figure id="linkedinImg" class="fui-linkedin"></figure>
-                    </div>
 -->
                 </div>
             </section>
