@@ -67,12 +67,14 @@ $(document).ready(function () {
                 $("#compSciDes").text(languages.compSciDes);
                 $("#mec").text(languages.mec);
                 $("#mecDes").text(languages.mecDes);
+                $("#chooseLang").text(languages.chooseLang);
                 $("#languagesTitle").text(languages.languagesTitle);
                 $("#english").text(languages.english);
                 $("#french").text(languages.french);
                 $("#spanish").text(languages.spanish);
                 $("#dutch").text(languages.dutch);
                 $("#experienceTitle").text(languages.experienceTitle);
+                $("#hover4info").text(languages.hover4info);
                 $("#frontDevRole").text(languages.frontDevRole);
                 $("#wgRole").text(languages.wgRole);
                 $("#tmxRole").text(languages.tmxRole);
