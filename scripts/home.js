@@ -1,29 +1,7 @@
 $(document).ready(function () {  
 
     $("select").select2({dropdownCssClass: 'dropdown-inverse'});
-    //populating correct language
-    
-    //autoset correct language
-    var languages; 
-    function getLanguage() {
-        (localStorage.getItem('languages') == null) ? setLanguage('en') : false;
-        $.ajax({ 
-            url:  '/PersonalWebsite/languages/' +  localStorage.getItem('languages') + '.json', 
-            dataType: 'json', async: false, dataType: 'json', 
-            success: function (lang) { language = lang } });
-    }
 
-    function setLanguage(lang) {
-        localStorage.setItem('languages', lang);
-    }
-    
-    //manually set language
-    $('#selectSpanish').click(function(){
-        var lang = $(this).val;
-        localStorage.setItem('languages','es');
-        $("#welcome").text(languages.welcome);
-    })
-    
 
     //animate presentation of opening screen
     $('#menu').hide();
@@ -45,6 +23,66 @@ $(document).ready(function () {
         });
     });
 
+
+    //set correct language
+    var languages; 
+
+    $("#selectLang").change(function(){
+        var selectedLang = this.value;
+
+        switch(selectedLang){
+            case 'en':
+                selectedLang = 'en'
+                getLanguage(selectedLang);
+                break;
+            case 'fr':
+                selectedLang = 'fr'
+                getLanguage(selectedLang);
+                break;
+            case 'es':
+                selectedLang = 'es'
+                getLanguage(selectedLang);
+                break;
+            default:
+                getLanguage('en');
+                break;
+        }
+    });
+    
+    function getLanguage(selectedLang) {
+        $.ajax({ 
+            url:  '/docs/languages/' + selectedLang + '.json', 
+            dataType: 'json', dataType: 'json', 
+            success: function populatePage(languages) {
+                $("#aboutMenuText").text(languages.about);
+                var test = $("#aboutMenuText");
+                $("#qualMenuText").text(languages.qualifications);
+                $("#expMenuText").text(languages.experience);
+                $("#contactMenuText").text(languages.contact);
+                $("#welcome").text(languages.welcome);
+                $("#aboutArticle").text(languages.aboutText);
+                $("#qualifications").text(languages.qualificationsTitle);
+                $("#degrees").text(languages.degrees);
+                $("#compSci").text(languages.compSci);
+                $("#compSciDes").text(languages.compSciDes);
+                $("#mec").text(languages.mec);
+                $("#mecDes").text(languages.mecDes);
+                $("#languagesTitle").text(languages.languagesTitle);
+                $("#english").text(languages.english);
+                $("#french").text(languages.french);
+                $("#spanish").text(languages.spanish);
+                $("#dutch").text(languages.dutch);
+                $("#experienceTitle").text(languages.experienceTitle);
+                $("#frontDevRole").text(languages.frontDevRole);
+                $("#wgRole").text(languages.wgRole);
+                $("#tmxRole").text(languages.tmxRole);
+                $("#studyRole").text(languages.studyRole);
+                $("#contactText").text(languages.contactText);
+                $("#welcome").show();
+            }
+        });
+    }
+    
     //experience section functionality
     $("#fdInfo").hide();
     $("#wgInfo").hide();
@@ -153,6 +191,12 @@ $(document).ready(function () {
             scrollTop: scrTo
         }, 1250)
         $('#main-nav').slideUp();
+    })
+
+    //contact email functionality
+    $('#emailLink').click(function(event){
+        event.preventDefault();
+        window.location = 'mailto:ryan.headley@me.com';
     })
 
 });

@@ -61,6 +61,7 @@
 
 #container {
     padding: 20px;
+    margin-top: 40px;
 }
 
 #container > section {
@@ -92,11 +93,13 @@ h3 {
     margin-right: 40px;
 }
 
+/*
 #aboutText h1 {
     margin: 0px;
     font-size: 48px;
     display: none;
 }
+*/
 
 #aboutText p {
     font-size: 20px;;
@@ -153,6 +156,11 @@ h3 {
     display: block;
     margin-right: 40px;
     width: 20vw;
+}
+
+#selectLang {
+    display: block;
+    visibility: hidden;
 }
 
 #experience {
@@ -241,6 +249,12 @@ h3 {
     margin: 10px;
 }
 
+#contactArticle a:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* For contact form
 #contactName {
     max-width: 300px;
 }
@@ -257,17 +271,7 @@ h3 {
     float:left;
     clear: both !important;
 }
-
-#linkedin {
-    width: 200px;
-}
-
-#linkedinImg {
-    width: 100%;
-    height: auto;
-    display: block;
-    float: left;
-}
+*/
 
 /* How menu will react to small screens. */
 @media screen and (max-width:480px){
