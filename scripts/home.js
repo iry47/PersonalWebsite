@@ -51,7 +51,7 @@ $(document).ready(function () {
     
     function getLanguage(selectedLang) {
         $.ajax({ 
-            url:  '/docs/languages/' + selectedLang + '.json', 
+            url:  '/languages/' + selectedLang + '.json', 
             dataType: 'json', dataType: 'json', 
             success: function populatePage(languages) {
                 $("#aboutMenuText").text(languages.about);
