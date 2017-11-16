@@ -60,7 +60,7 @@
 }
 
 #container {
-    padding: 20px;
+    padding-top: 20px;
     margin-top: 40px;
 }
 
@@ -85,6 +85,7 @@ h3 {
 }
 
 #about {
+    padding: 20px;
     padding-top: 25vh;
 }
 #aboutText {
@@ -120,6 +121,7 @@ h3 {
 }
 
 .qualifications {
+    padding: 20px;
     display: inline-block;
     padding-bottom: 10px;
     overflow-y: scroll;
@@ -164,6 +166,7 @@ h3 {
 }
 
 #experience {
+    padding: 20px;
     min-height: 90vh !important;
 }
 
@@ -234,13 +237,30 @@ h3 {
 }
 
 #contact {
-    min-height: 100vh;
-    background-image: url(/images/bariFray.jpg);
+    min-height: 100vh !important;
+    background-image: url(/docs/images/barca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+}
+
+#contactDiv {
+    padding: 20px;
 }
 
 #contactArticle {
     max-width: 500px;
 }
+/*
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}
+*/
 
 #contactForm {
     max-width: 90vh;
