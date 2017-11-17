@@ -1,7 +1,7 @@
 $(document).ready(function () {  
 
     $("select").select2({dropdownCssClass: 'dropdown-inverse'});
-
+    
 
     //animate presentation of opening screen
     $('#menu').hide();
@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('#aboutArticle').delay(400).fadeIn(4500);
     $("#aboutImg").delay(400).fadeIn(4500);
 
-    //initial scrolling appear
+    //scrolling appear
     $(window).scroll(function(){
         $('#menu').fadeIn(900);
         $('.sectionDiv').each(function(i){
@@ -21,6 +21,24 @@ $(document).ready(function () {
                 $(this).animate({'opacity':'1'},2000);
             }
         });
+        
+        //contact div menu opacity
+        var contactPos = $('#contactDiv').offset().top - $(window).scrollTop();
+        var menuPos = $('#menu').offset().top + $('#menu').height();
+        
+        if(menuPos > contactPos) {
+            $('.main-navigation').css({
+                "background" : "rgb(255,255,255)",
+                "background" : "rgba(255,255,255,0)",        
+                });
+            $('.main-navigation a').css({
+                "color" : "#fff"
+            })
+        }
+        else {
+            $('.main-navigation').css({background:"#fff",});
+            $('.main-navigation a').css({color:"#34495E"})
+        }
     });
 
 
