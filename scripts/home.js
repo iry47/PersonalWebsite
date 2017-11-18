@@ -79,7 +79,7 @@ $(document).ready(function () {
                 $("#contactMenuText").text(languages.contact);
                 $("#welcome").text(languages.welcome);
                 $("#aboutArticle").text(languages.aboutText);
-                $("#qualifications").text(languages.qualificationsTitle);
+                $("#qualificationsTitle").text(languages.qualificationsTitle);
                 $('#selectEnglish').text(languages.selectEnglish);
                 $('#selectFrench').text(languages.selectFrench);
                 $('#selectSpanish').text(languages.selectSpanish);
