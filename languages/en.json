@@ -5,22 +5,28 @@
     "contact" : "Contact",
     "welcome" : "Welcome!",
     "aboutText" : "My name is Ryan. I'm a computer programer, language enthuisiast and avid traveller. Currently, but not limited to, working as a front end web developer - this site is probably your introduction to my work. My portfolio is growing rapidly and I'd love to include you in it!",
+    "qualificationsTitle" : "Qualifications",
     "degrees" : "Degrees",
     "compSci" : "Computer Science",
     "compSciDes" : "Bachelor's from Queen's University",
     "mec" : "Mechanical Engineer",
     "mecDes" : "Bachelor's from Queen's University",
     "languagesTitle" : "Languages",
+    "chooseLang" : "Choose your language",
     "english" : "English",
     "french" : "French",
     "spanish" : "Spanish",
     "dutch" : "Dutch",
     "experienceTitle" : "Experience",
+    "hover4info" : "Hover for more information",
     "frontDevRole" : "Front End Developer - This site!",
     "wgRole" : "Software Developer - The Woodbridge Group",
     "tmxRole" : "Software Developer - TMX Group, Razaor Risk",
     "studyRole" : "Student - Queen's University",
+    "fdInfo": "This site was designed to be a simple introduction to my coding abilities as well showcasing my experience.",
+    "wgInfo": "Converted the existing reporting system from an ASP.NET Web Form application to an ASP.NET MVC application, designed and created a full client and server side reporting site and implemented the Telerik Kendo UI.",
+    "tmxInfo" : "I worked with the team put in charge of developing the new risk analysis software. My tasks varied from programming a web application, developping a RESTful web service to documentation. This allowed me to gain valuable experience in several different computing languages: C#, HTML5, Javascript, CSS, MySQL and Powershell.",
+    "studyInfo" : "I graduated with a general computer science degree and gained a wide array of experience in different languages and frameworks - from command line to object-oriented programing and from data structures to functional programming: my studies were the foundation of my computer science knowledge.",
     "contactText" : "Whether you're looking for a developer, want to meet up for a drink or anything in between - here's the place to get in contact. Looking forward to hearing from you!"
-    
-    
+
 }
