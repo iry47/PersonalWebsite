@@ -32,12 +32,17 @@ $(document).ready(function () {
                 "background" : "rgba(255,255,255,0)",        
                 });
             $('.main-navigation a').css({
-                "color" : "#fff"
-            })
+                "color" : "#fff",
+                borderBottom: "2px solid #fff"
+            });
         }
         else {
             $('.main-navigation').css({background:"#fff",});
-            $('.main-navigation a').css({color:"#34495E"})
+            $('.main-navigation a').css({
+                color:"#34495E",
+                borderBottom: "2px solid #1ABC9C"
+            });
+            
         }
     });
 
