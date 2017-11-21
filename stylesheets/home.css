@@ -1,4 +1,4 @@
-
+/*menu styling*/
 .main-navigation {
     position: fixed;
     top: 0px;
@@ -30,20 +30,9 @@
 
 }
 
-.main-navigation ul li a:hover {
-    color: #1ABC9C;
-    border-bottom: 2px solid #1ABC9C;
-}
-
 .main-navigation ul li a span {
     margin-left: 7px;
 }
-
-/* To look at
-.main-navigation ul li a i {
-    vertical-align:!important;
-}
-*/
 
 #miniMenu {
     display: none;
@@ -52,12 +41,7 @@
     cursor: pointer;
 }
 
-#languageSelect {
-    display: inline-block;
-    float: left;
-    max-width: 200px;
-}
-
+/*general container and section styling*/
 #container {
     padding-top: 20px;
     margin-top: 40px;
@@ -83,6 +67,7 @@ h3 {
     margin-top: 0px !important;
 }
 
+/*about section*/
 #about {
     padding: 20px;
     padding-top: 25vh;
@@ -92,14 +77,6 @@ h3 {
     float: left;
     margin-right: 40px;
 }
-
-/*
-#aboutText h1 {
-    margin: 0px;
-    font-size: 48px;
-    display: none;
-}
-*/
 
 #aboutText p {
     font-size: 20px;;
@@ -119,6 +96,7 @@ h3 {
     border-radius: 20px;
 }
 
+/*qualifications section*/
 .qualifications {
     padding: 20px;
     display: inline-block;
@@ -153,6 +131,12 @@ h3 {
     float:left;
 }
 
+#languageSelect {
+    display: inline-block;
+    float: left;
+    max-width: 200px;
+}
+
 .languagesDiv article > div {
     display: block;
     margin-right: 40px;
@@ -164,6 +148,7 @@ h3 {
     visibility: hidden;
 }
 
+/*experience section*/
 #experience {
     padding: 20px;
     min-height: 90vh !important;
@@ -194,12 +179,6 @@ h3 {
 .experienceImg img {
     width: 100%;
 }
-
-/* Trying to fix this fucking non-disapearing cunt fucker
-.form-group {
-    display: block !important;
-}
-*/
 
 .thingsUsed {
     display: inline-block;
@@ -235,6 +214,7 @@ h3 {
     display: block;
 }
 
+/*contact section*/
 #contact {
     min-height: 100vh !important;
     background-image: url(/images/barca.jpg);
@@ -251,15 +231,6 @@ h3 {
 #contactArticle {
     max-width: 500px;
 }
-/*
-    color: white;
-    text-shadow: 
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
-}
-*/
 
 #contactForm {
     max-width: 90vh;
@@ -274,7 +245,7 @@ h3 {
     color: blue;
 }
 
-/* For contact form
+/* For contact form when back end is incorporated 
 #contactName {
     max-width: 300px;
 }

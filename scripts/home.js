@@ -1,5 +1,6 @@
 $(document).ready(function () {  
 
+    //activate flat ui selects
     $("select").select2({dropdownCssClass: 'dropdown-inverse'});
     
 
@@ -32,16 +33,12 @@ $(document).ready(function () {
                 "background" : "rgba(255,255,255,0)",        
                 });
             $('.main-navigation a').css({
-                "color" : "#fff",
-                borderBottom: "2px solid #fff"
+                "color" : "#fff"
             });
         }
         else {
             $('.main-navigation').css({background:"#fff",});
-            $('.main-navigation a').css({
-                color:"#34495E",
-                borderBottom: "2px solid #1ABC9C"
-            });
+            $('.main-navigation a').css({color:"#34495E"});
             
         }
     });
@@ -49,7 +46,7 @@ $(document).ready(function () {
 
     //set correct language
     var languages; 
-
+    
     $("#selectLang").change(function(){
         var selectedLang = this.value;
 
@@ -71,7 +68,7 @@ $(document).ready(function () {
                 break;
         }
     });
-    
+        //get text from json file and populate page
     function getLanguage(selectedLang) {
         $.ajax({ 
             url:  '/languages/' + selectedLang + '.json', 
@@ -116,7 +113,7 @@ $(document).ready(function () {
     $("#wgInfo").hide();
     $("#tmxInfo").hide();
     $("#studyInfo").hide();
-
+        //hover over role functionalities
     $('#frontDevRole').hover(function(){
         $(this).css('color','#fff');
         $('#fdInfo').show();
