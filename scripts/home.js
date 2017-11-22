@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     //activate flat ui selects
     $("select").select2({dropdownCssClass: 'dropdown-inverse'});
-    
+
 
     //animate presentation of opening screen
     $('#menu').hide();
@@ -22,16 +22,16 @@ $(document).ready(function () {
                 $(this).animate({'opacity':'1'},2000);
             }
         });
-        
+
         //contact div menu opacity
         var contactPos = $('#contactDiv').offset().top - $(window).scrollTop();
         var menuPos = $('#menu').offset().top + $('#menu').height();
-        
+
         if(menuPos > contactPos) {
             $('.main-navigation').css({
                 "background" : "rgb(255,255,255)",
                 "background" : "rgba(255,255,255,0)",        
-                });
+            });
             $('.main-navigation a').css({
                 "color" : "#fff"
             });
@@ -39,14 +39,14 @@ $(document).ready(function () {
         else {
             $('.main-navigation').css({background:"#fff",});
             $('.main-navigation a').css({color:"#34495E"});
-            
+
         }
     });
 
 
     //set correct language
     var languages; 
-    
+
     $("#selectLang").change(function(){
         var selectedLang = this.value;
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
                 break;
         }
     });
-        //get text from json file and populate page
+    //get text from json file and populate page
     function getLanguage(selectedLang) {
         $.ajax({ 
             url:  '/languages/' + selectedLang + '.json', 
@@ -107,13 +107,13 @@ $(document).ready(function () {
             }
         });
     }
-    
+
     //experience section functionality
     $("#fdInfo").hide();
     $("#wgInfo").hide();
     $("#tmxInfo").hide();
     $("#studyInfo").hide();
-        //hover over role functionalities
+    //hover over role functionalities
     $('#frontDevRole').hover(function(){
         $(this).css('color','#fff');
         $('#fdInfo').show();
@@ -218,11 +218,21 @@ $(document).ready(function () {
         $('#main-nav').slideUp();
     })
 
-    //contact email functionality
+    //contact icons
     $('#emailLink').click(function(event){
         event.preventDefault();
         window.location = 'mailto:ryan.headley@me.com';
-    })
+    });
+
+    $('#linkedInLink').click(function(event){
+        event.preventDefault();
+        window.open('https://www.linkedin.com/in/ryan-headley-48980950/');
+    });
+                             
+    $('#twitterLink').click(function(event){
+        event.preventDefault();
+        window.open('https://twitter.com/iRy47');
+    });
 
 });
 

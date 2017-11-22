@@ -217,7 +217,7 @@ h3 {
 /*contact section*/
 #contact {
     min-height: 100vh !important;
-    background-image: url(/images/barca.jpg);
+    background-image: url(/docs/images/barca.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -243,6 +243,16 @@ h3 {
 #contactArticle a:hover {
     cursor: pointer;
     color: blue;
+}
+
+#socialLinks i{    
+    font-size: 32px;
+    margin: 10px;
+}
+
+#socialLinks i:hover {
+    cursor: pointer;
+    color: #1ABC9C;
 }
 
 /* For contact form when back end is incorporated 

@@ -23,6 +23,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="/docs/scripts/home.js"></script>
         <script src="/docs/dist/js/flat-ui.js"></script>
+        <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+
     </head>
 
     <body>
@@ -125,12 +127,12 @@ Idea is to showcase the good stuff. Degrees, languages, anything else. Thinking 
                     <div id="languageSelect">
                         <label>Choose your Language</label>
                         <div>
-                        <select id="selectLang">
-                            <option id="selectEnglish" value="en">English</option>
-                            <option id="selectFrench" value="fr">French</option>
-                            <option id="selectSpanish" value="es">Spanish</option>
-                        </select>
-                            </div>
+                            <select id="selectLang">
+                                <option id="selectEnglish" value="en">English</option>
+                                <option id="selectFrench" value="fr">French</option>
+                                <option id="selectSpanish" value="es">Spanish</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -219,26 +221,30 @@ Standard contact form. For now...
                 <div id="contactDiv" class="sectionDiv">
                     <h2>Contact</h2>
                     <article id="contactArticle">
-                        <p id="contactText">Whether you're looking for a developer, want to meet up for a drink or anything in between - send me an email. Looking forward to hearing from you!</p>
-                        <a id="emailLink">ryan.headley@me.com</a>
+                        <p id="contactText">Whether you're looking for a developer, want to meet up for a drink or anything in between - send me a message. Looking forward to hearing from you!</p>
                     </article>
-<!-- Form that will be implemented when server side is available
-                    <form id="contactForm" class="contactForm">
-                        <div id="contactName" class="input-group">
-                            <span class="input-group-addon"></span>
-                            <input type="text" class="form-control" placeholder="Name" />
-                        </div>
-                        <div id="contactEmail" class="input-group">
-                            <span class="input-group-addon"></span>
-                            <input type="text" class="form-control" placeholder="Email" />
-                        </div>
-                        <div id="contactMsg" class="input-group">                            <span class="input-group-addon"></span>
-                            <textarea id="msg" type="text" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <div id="sendBtn">
-                            <button id="sendBtn" class="btn btn-hg btn-primary" type="submit">Send Email</button>
-                        </div>
-                    </form>
+                    <div id="socialLinks">
+                        <i id="emailLink" title="Email" class="fa fa-at"></i>
+                        <i id="linkedInLink" title="LinkedIn" class="fa fa-linkedin-square"></i>
+                        <i id="twitterLink" title="Twitter" class="fa fa-twitter"></i>
+                    </div>
+                    <!-- Form that will be implemented when server side is available
+<form id="contactForm" class="contactForm">
+<div id="contactName" class="input-group">
+<span class="input-group-addon"></span>
+<input type="text" class="form-control" placeholder="Name" />
+</div>
+<div id="contactEmail" class="input-group">
+<span class="input-group-addon"></span>
+<input type="text" class="form-control" placeholder="Email" />
+</div>
+<div id="contactMsg" class="input-group">                            <span class="input-group-addon"></span>
+<textarea id="msg" type="text" class="form-control" placeholder="Message"></textarea>
+</div>
+<div id="sendBtn">
+<button id="sendBtn" class="btn btn-hg btn-primary" type="submit">Send Email</button>
+</div>
+</form>
 -->
                 </div>
             </section>
