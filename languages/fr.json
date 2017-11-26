@@ -4,7 +4,7 @@
     "experience" : "Expérience",
     "contact" : "Contact",
     "welcome" : "Bienvenue!",
-    "aboutText": "Je m'applle Ryan. Je suis un programmeur, j'ai une passion pour les langues et j'adore voyager. Actuelement, mais pas uniquement, je travail comme un front-end dévélopeur - peut être cet site est mon premier oeuvre que vous avez vu. Mon dossier est en train de grandir et j'aimerais vous incluire!",
+    "aboutText": "Je m'appelle Ryan. Je suis développeur, j'ai une grande passion pour les langues et j'adore voyager. Je travaille actuellement comme front-end développeur et ce site est peut être votre premier contact avec mon travail. Mon book se remplit petit à petit et j'espère que vous puissiez en faire partie!",
     "qualificationsTitle" : "Qualifications",
     "degrees" : "Diplômes",
     "compSci" : "Informatiques",
@@ -27,8 +27,8 @@
     "tmxRole" : "Dévélopeur Logiciel - TMX Group, Razor Risk",
     "studyRole" : "Etudiant - Université de Queen's",
     "fdInfo": "Ce siteweb est une introduction simple de mes abilités et pour montrer mon expérience.",
-    "wgInfo": "J'ai converti le système de reportage d'une ASP.NET Web Form application à une ASP.NET MVC application, créé une site de reportage entier avec le Telerik Kendo UI.",
-    "tmxInfo" : "J'ai travaillé avec l'équipe responsable pour dévéloper le nouveau logiciel d'analyze de risque. Mes traveaux incluyait dévéloper un application de web, dévéloper un RESTful service de web et documentation. J'ai gagné de l'expérience avec C#, HTML5, Javascript, CSS, MySQL et Powershell.",
-    "studyInfo" : "Mes études dans l'informatiques m'ont donner beaucoup d'expérience dans une collection de langues et frameworks - de command line a object-oriented programing et des structures infos à du programation functional: c'était la fondation de toutes mes connaissances infortmatiques.",
-    "contactText" : "Soit vous cherchez un dévélopeur, soit vous voulez rencontrer pour prendre une verre ou n'importe quel truc entre les deux - voilà l'endroit pour nous metre en contact. J'attend ton message!"
+    "wgInfo": "Durant cette expérience, ma principale tâche a été de convertir le système de rapports utilisant le Framework ASP.NET Web Form en une application ASP.NET MVC. J’ai élaboré une solution serveur/client et j'ai utilisé la suite Telerik Kendo UI.",
+    "tmxInfo" : "Durant cette expérience, j’ai travaillé dans l’équipe s’occupant du nouveau logiciel d’analyse de risque. Mes tâches allait de la programmation d’une application web jusqu’à la documentation en passsant par un Web service RESTful. Cette expérience m’a permis d’engranger beaucoup d’expérience dans différent langages : C#, HTML5, CSS3, MySQL et PowerShell.",
+    "studyInfo" : "J’ai un diplôme en informatique et j’ai accumulé beaucoup d’expérience en utilisant différents langages et Frameworks, de la ligne de commande à la programmation orienté objet en passant par les structures de données et la programmation fonctionnelle : Mes études ont été le fondement de mes connaissances en Informatique.",
+    "contactText" : "Que vous soyez à la recherche d’un développeur pour votre èquipe ou que vous vouliez me rencontrer pour prendre un verre ou quoi que ce soit d’autre – Cette section est l'endroit pour nous mettre en contact. J'attend votre message!"
 }
