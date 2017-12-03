@@ -1,17 +1,17 @@
 $(document).ready(function () {  
 
-    //activate flat ui selects
+//activate flat ui selects
     $("select").select2({dropdownCssClass: 'dropdown-inverse'});
 
 
-    //animate presentation of opening screen
+//animate presentation of opening screen
     $('#menu').hide();
     $('#about').show();
     $('#welcome').fadeIn(1500);
     $('#aboutArticle').delay(400).fadeIn(4500);
     $("#aboutImg").delay(400).fadeIn(4500);
 
-    //scrolling appear
+//scrolling appear
     $(window).scroll(function(){
         $('#menu').fadeIn(900);
         $('.sectionDiv').each(function(i){
@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
 
 
-    //set correct language
+//set correct language
     var languages; 
 
     $("#selectLang").change(function(){
@@ -108,12 +108,31 @@ $(document).ready(function () {
         });
     }
 
-    //experience section functionality
+//experience section functionality
+    $('#skInfo').hide();
     $("#fdInfo").hide();
     $("#wgInfo").hide();
     $("#tmxInfo").hide();
     $("#studyInfo").hide();
+    
     //hover over role functionalities
+    $('#skRole').hover(function(){
+        $(this).css('color','#fff');
+        $('#skInfo').show();
+        $('#html5Check').radiocheck('enable');
+        $('#css3Check').radiocheck('enable');
+        $('#jsCheck').radiocheck('enable');
+        $('#jqueryCheck').radiocheck('enable');
+    }, 
+                             function() {
+        $(this).css('color','#34495E');
+        $("#skInfo").hide();
+        $('#html5Check').radiocheck('disable');
+        $('#css3Check').radiocheck('disable');
+        $('#jsCheck').radiocheck('disable');
+        $('#jqueryCheck').radiocheck('disable');
+    });
+    
     $('#frontDevRole').hover(function(){
         $(this).css('color','#fff');
         $('#fdInfo').show();
@@ -132,7 +151,7 @@ $(document).ready(function () {
         $('#bootCheck').radiocheck('disable');
         $('#jqueryCheck').radiocheck('disable');
     });
-
+    
     $('#wgRole').hover(function(){
         $(this).css('color','#fff');
         $("#wgInfo").show();
@@ -144,7 +163,7 @@ $(document).ready(function () {
         $('#aspCheck').radiocheck('enable');
         $('#sqlCheck').radiocheck('enable');
     }, 
-                       function() {
+                            function() {
         $(this).css('color','#34495E');
         $("#wgInfo").hide();
         $('#html5Check').radiocheck('disable');
@@ -155,7 +174,7 @@ $(document).ready(function () {
         $('#aspCheck').radiocheck('disable');
         $('#sqlCheck').radiocheck('disable');
     });
-
+    
     $('#tmxRole').hover(function(){
         $(this).css('color','#fff');
         $("#tmxInfo").show();
@@ -204,7 +223,7 @@ $(document).ready(function () {
         $('#jqueryCheck').radiocheck('disable');
     });
 
-    //small screen menu functionality
+//small screen menu functionality
     $('#miniMenu').click(function () {
         $('#main-nav').slideToggle();
     });
@@ -218,7 +237,7 @@ $(document).ready(function () {
         $('#main-nav').slideUp();
     })
 
-    //contact icons
+//contact icons
     $('#emailLink').click(function(event){
         event.preventDefault();
         window.location = 'mailto:ryan.headley@me.com';
