@@ -212,13 +212,9 @@ h3 {
 }
 
 /*testimonials section*/
-
-.testimonialArticle{
-    margin-left: 40px;
-}
-
 .tesQuote{
     max-width: 60vw;
+    margin-left: 40px;
 }
 
 /*contact section*/
