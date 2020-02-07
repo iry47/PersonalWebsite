@@ -7,15 +7,13 @@ $(document).ready(function () {
     getLanguage('en');
 
     //animate presentation of opening screen
-    $('#menu').hide();
     $('#about').show();
     $('#welcome').fadeIn(1500);
     $('#aboutArticle').delay(400).fadeIn(4500);
     $("#aboutImg").delay(400).fadeIn(4500);
 
     //scrolling appear
-    $(window).scroll(function(){
-        $('#menu').fadeIn(900);
+     $(window).scroll(function(){
         $('.sectionDiv').each(function(i){
             var middle_of_object = $(this).offset().top + $(this).outerHeight() / 2;
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -25,24 +23,6 @@ $(document).ready(function () {
             }
         });
 
-        //contact div menu opacity
-        var contactPos = $('#contactDiv').offset().top - $(window).scrollTop();
-        var menuPos = $('#menu').offset().top + $('#menu').height();
-
-        if(menuPos > contactPos) {
-            $('.main-navigation').css({
-                "background" : "rgb(255,255,255)",
-                "background" : "rgba(255,255,255,0)",        
-            });
-            $('.main-navigation a').css({
-                "color" : "#fff"
-            });
-        }
-        else {
-            $('.main-navigation').css({background:"#fff",});
-            $('.main-navigation a').css({color:"#34495E"});
-
-        }
     });
 
     $('.filterCheckbox').radiocheck();
@@ -153,62 +133,62 @@ $(document).ready(function () {
                         $("#flRole").css('color','#fff');
                         $('#flInfo').show();
                         $('#moreInfo').show();
-                        $('#html5Check').radiocheck('enable');
-                        $('#css3Check').radiocheck('enable');
-                        $('#jsCheck').radiocheck('enable');
-                        $('#jqueryCheck').radiocheck('enable');
-                        $('#aspCheck').radiocheck('enable');
-                        $('#sqlCheck').radiocheck('enable');
-                        $('#phpCheck').radiocheck('enable');
-                        $('#bootCheck').radiocheck('enable');
-                        $('#ajaxCheck').radiocheck('enable');
+                        $('#html5Check').css('color','rgb(70, 65, 89)');
+                        $('#css3Check').css('color','rgb(70, 65, 89)');
+                        $('#jsCheck').css('color','rgb(70, 65, 89)');
+                        $('#jqueryCheck').css('color','rgb(70, 65, 89)');
+                        $('#aspCheck').css('color','rgb(70, 65, 89)');
+                        $('#sqlCheck').css('color','rgb(70, 65, 89)');
+                        $('#phpCheck').css('color','rgb(70, 65, 89)');
+                        $('#bootCheck').css('color','rgb(70, 65, 89)');
+                        $('#ajaxCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "frontDevRole":
                         $("#frontDevRole").css('color','#fff');
                         $('#fdInfo').show();
                         $('#moreInfo').show();
-                        $('#html5Check').radiocheck('enable');
-                        $('#css3Check').radiocheck('enable');
-                        $('#jsCheck').radiocheck('enable');
-                        $('#bootCheck').radiocheck('enable');
-                        $('#jqueryCheck').radiocheck('enable');
+                        $('#html5Check').css('color','rgb(70, 65, 89)');
+                        $('#css3Check').css('color','rgb(70, 65, 89)');
+                        $('#jsCheck').css('color','rgb(70, 65, 89)');
+                        $('#bootCheck').css('color','rgb(70, 65, 89)');
+                        $('#jqueryCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "wgRole":
                         $("#wgRole").css('color','#fff');
                         $("#wgInfo").show();
                         $('#moreInfo').show();
-                        $('#html5Check').radiocheck('enable');
-                        $('#css3Check').radiocheck('enable');
-                        $('#jsCheck').radiocheck('enable');
-                        $('#cSharpCheck').radiocheck('enable');
-                        $('#jqueryCheck').radiocheck('enable');
-                        $('#aspCheck').radiocheck('enable');
-                        $('#sqlCheck').radiocheck('enable');
+                        $('#html5Check').css('color','rgb(70, 65, 89)');
+                        $('#css3Check').css('color','rgb(70, 65, 89)');
+                        $('#jsCheck').css('color','rgb(70, 65, 89)');
+                        $('#cSharpCheck').css('color','rgb(70, 65, 89)');
+                        $('#jqueryCheck').css('color','rgb(70, 65, 89)');
+                        $('#aspCheck').css('color','rgb(70, 65, 89)');
+                        $('#sqlCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "tmxRole":
                         $("#tmxRole").css('color','#fff');
                         $("#tmxInfo").show();
                         $('#moreInfo').show();
-                        $('#html5Check').radiocheck('enable');
-                        $('#css3Check').radiocheck('enable');
-                        $('#jsCheck').radiocheck('enable');
-                        $('#angularCheck').radiocheck('enable');
-                        $('#aspCheck').radiocheck('enable');
-                        $('#sqlCheck').radiocheck('enable');
-                        $('#cSharpCheck').radiocheck('enable');
+                        $('#html5Check').css('color','rgb(70, 65, 89)');
+                        $('#css3Check').css('color','rgb(70, 65, 89)');
+                        $('#jsCheck').css('color','rgb(70, 65, 89)');
+                        $('#angularCheck').css('color','rgb(70, 65, 89)');
+                        $('#aspCheck').css('color','rgb(70, 65, 89)');
+                        $('#sqlCheck').css('color','rgb(70, 65, 89)');
+                        $('#cSharpCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "studyRole":
                         $("#studyRole").css('color','#fff');
                         $("#studyInfo").show();
                         $('#moreInfo').show();
-                        $('#html5Check').radiocheck('enable');
-                        $('#css3Check').radiocheck('enable');
-                        $('#jsCheck').radiocheck('enable');
-                        $('#angularCheck').radiocheck('enable');
-                        $('#pythonCheck').radiocheck('enable');
-                        $('#sqlCheck').radiocheck('enable');
-                        $('#phpCheck').radiocheck('enable');
-                        $('#jqueryCheck').radiocheck('enable');
+                        $('#html5Check').css('color','rgb(70, 65, 89)');
+                        $('#css3Check').css('color','rgb(70, 65, 89)');
+                        $('#jsCheck').css('color','rgb(70, 65, 89)');
+                        $('#angularCheck').css('color','rgb(70, 65, 89)');
+                        $('#pythonCheck').css('color','rgb(70, 65, 89)');
+                        $('#sqlCheck').css('color','rgb(70, 65, 89)');
+                        $('#phpCheck').css('color','rgb(70, 65, 89)');
+                        $('#jqueryCheck').css('color','rgb(70, 65, 89)');
                         break;
 
                 }
@@ -220,62 +200,62 @@ $(document).ready(function () {
                          $("#flRole").css('color','#34495e');
                         $('#flInfo').hide();
                          $('#moreInfo').hide();
-                        $('#html5Check').radiocheck('disable');
-                        $('#css3Check').radiocheck('disable');
-                        $('#jsCheck').radiocheck('disable');
-                        $('#jqueryCheck').radiocheck('disable');
-                        $('#aspCheck').radiocheck('disable');
-                        $('#sqlCheck').radiocheck('disable');
-                        $('#phpCheck').radiocheck('disable');
-                         $('#bootCheck').radiocheck('disable');
-                         $('#ajaxCheck').radiocheck('disable');
+                        $('#html5Check').css('color','rgb(108, 123, 149)');
+                        $('#css3Check').css('color','rgb(108, 123, 149)');
+                        $('#jsCheck').css('color','rgb(108, 123, 149)');
+                        $('#jqueryCheck').css('color','rgb(108, 123, 149)');
+                        $('#aspCheck').css('color','rgb(108, 123, 149)');
+                        $('#sqlCheck').css('color','rgb(108, 123, 149)');
+                        $('#phpCheck').css('color','rgb(108, 123, 149)');
+                         $('#bootCheck').css('color','rgb(108, 123, 149)');
+                         $('#ajaxCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "frontDevRole":
                          $("#frontDevRole").css('color','#34495e');
                         $('#fdInfo').hide();
                          $('#moreInfo').hide();
-                        $('#html5Check').radiocheck('disable');
-                        $('#css3Check').radiocheck('disable');
-                        $('#jsCheck').radiocheck('disable');
-                        $('#bootCheck').radiocheck('disable');
-                        $('#jqueryCheck').radiocheck('disable');
+                        $('#html5Check').css('color','rgb(108, 123, 149)');
+                        $('#css3Check').css('color','rgb(108, 123, 149)');
+                        $('#jsCheck').css('color','rgb(108, 123, 149)');
+                        $('#bootCheck').css('color','rgb(108, 123, 149)');
+                        $('#jqueryCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "wgRole":
                          $("#wgRole").css('color','#34495e');
                         $("#wgInfo").hide();
                          $('#moreInfo').hide();
-                        $('#html5Check').radiocheck('disable');
-                        $('#css3Check').radiocheck('disable');
-                        $('#jsCheck').radiocheck('disable');
-                        $('#cSharpCheck').radiocheck('disable');
-                        $('#jqueryCheck').radiocheck('disable');
-                        $('#aspCheck').radiocheck('disable');
-                        $('#sqlCheck').radiocheck('disable');
+                        $('#html5Check').css('color','rgb(108, 123, 149)');
+                        $('#css3Check').css('color','rgb(108, 123, 149)');
+                        $('#jsCheck').css('color','rgb(108, 123, 149)');
+                        $('#cSharpCheck').css('color','rgb(108, 123, 149)');
+                        $('#jqueryCheck').css('color','rgb(108, 123, 149)');
+                        $('#aspCheck').css('color','rgb(108, 123, 149)');
+                        $('#sqlCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "tmxRole":
                          $("#tmxRole").css('color','#34495e');
                         $("#tmxInfo").hide();
                          $('#moreInfo').hide();
-                        $('#html5Check').radiocheck('disable');
-                        $('#css3Check').radiocheck('disable');
-                        $('#jsCheck').radiocheck('disable');
-                        $('#angularCheck').radiocheck('disable');
-                        $('#aspCheck').radiocheck('disable');
-                        $('#sqlCheck').radiocheck('disable');
-                        $('#cSharpCheck').radiocheck('disable');
+                        $('#html5Check').css('color','rgb(108, 123, 149)');
+                        $('#css3Check').css('color','rgb(108, 123, 149)');
+                        $('#jsCheck').css('color','rgb(108, 123, 149)');
+                        $('#angularCheck').css('color','rgb(108, 123, 149)');
+                        $('#aspCheck').css('color','rgb(108, 123, 149)');
+                        $('#sqlCheck').css('color','rgb(108, 123, 149)');
+                        $('#cSharpCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "studyRole":
                          $("#studyRole").css('color','#34495e');
                         $("#studyInfo").hide();
                          $('#moreInfo').hide();
-                        $('#html5Check').radiocheck('disable');
-                        $('#css3Check').radiocheck('disable');
-                        $('#jsCheck').radiocheck('disable');
-                        $('#angularCheck').radiocheck('disable');
-                        $('#pythonCheck').radiocheck('disable');
-                        $('#sqlCheck').radiocheck('disable');
-                        $('#phpCheck').radiocheck('disable');
-                        $('#jqueryCheck').radiocheck('disable');
+                        $('#html5Check').css('color','rgb(108, 123, 149)');
+                        $('#css3Check').css('color','rgb(108, 123, 149)');
+                        $('#jsCheck').css('color','rgb(108, 123, 149)');
+                        $('#angularCheck').css('color','rgb(108, 123, 149)');
+                        $('#pythonCheck').css('color','rgb(108, 123, 149)');
+                        $('#sqlCheck').css('color','rgb(108, 123, 149)');
+                        $('#phpCheck').css('color','rgb(108, 123, 149)');
+                        $('#jqueryCheck').css('color','rgb(108, 123, 149)');
                         break;
 
                 }
@@ -285,7 +265,6 @@ $(document).ready(function () {
     $('.clickExp').hover(function(){
         if($(window).width() < 480){
             $(this).after($('.smallExp'));
-            $('.smallExp').show();
             switch($(this)['0'].id){
                 case "flRole":
                     activateExp("flRole");
@@ -303,9 +282,7 @@ $(document).ready(function () {
                     activateExp("studyRole");
                     break;   
             }
-            }  else{
-                $('.positions').after($(".smallExp"));
-            }
+		}
     }, function(){
         switch($(this)['0'].id){
                 case "flRole":
@@ -369,10 +346,17 @@ $(document).ready(function () {
         $('.smallExp').appendTo(div);
     }
 
+    //portfolio hover
+	$('.portfolio-image-div').hover(function(){
+		$(this).css({top:"-150px"});
+	}, function(){
+		$(this).css({top:"0px"});
+	});
+
     //contact icons
     $('#emailLink').click(function(event){
         event.preventDefault();
-        window.location = 'mailto:ryan.headley@me.com';
+        window.location = 'mailto:ryan.headley@me.com';x
     });
 
     $('#linkedInLink').click(function(event){

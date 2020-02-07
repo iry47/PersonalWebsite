@@ -2,6 +2,174 @@
   "type" : "FeatureCollection",
   "features" : [ {
     "geometry" : {
+      "coordinates" : [ 2.3732835, 48.8865039 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5665335732322613022",
+      "Location" : {
+        "Address" : "43 Quai de la Seine, 75019 Paris, France",
+        "Business Name" : "Cambuse - cave à manger - caviste",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8865039",
+          "Longitude" : "2.3732835"
+        }
+      },
+      "Published" : "2020-01-20T08:53:42Z",
+      "Title" : "Cambuse - cave à manger - caviste",
+      "Updated" : "2020-01-20T08:53:42Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3703611, 48.8536968 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=11856637451347906977",
+      "Location" : {
+        "Address" : "10-12 Place de la Bastille, 75011 Paris, France",
+        "Business Name" : "Le Falstaff",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8536968",
+          "Longitude" : "2.3703611"
+        }
+      },
+      "Published" : "2020-01-20T08:53:13Z",
+      "Title" : "Le Falstaff",
+      "Updated" : "2020-01-20T08:53:13Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3741982, 48.8530531 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1864662302588118879",
+      "Location" : {
+        "Address" : "49 Rue de Lappe, 75011 Paris, France",
+        "Business Name" : "BERLINER wunderbar",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8530531",
+          "Longitude" : "2.3741982"
+        }
+      },
+      "Published" : "2020-01-20T08:52:51Z",
+      "Title" : "BERLINER wunderbar",
+      "Updated" : "2020-01-20T08:52:51Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3743747, 48.8667779 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=1952205639424047328",
+      "Location" : {
+        "Address" : "64 Rue Jean-Pierre Timbaud, 75011 Paris, France",
+        "Business Name" : "L'Alimentation Générale",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8667779",
+          "Longitude" : "2.3743747"
+        }
+      },
+      "Published" : "2020-01-19T11:56:11Z",
+      "Title" : "L'Alimentation Générale",
+      "Updated" : "2020-01-19T11:56:11Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ 2.3652203, 48.8721119 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=3775393440321931125",
+      "Location" : {
+        "Address" : "80 Quai de Jemmapes, 75010 Paris, France",
+        "Business Name" : "Le Comptoir Général",
+        "Country Code" : "FR",
+        "Geo Coordinates" : {
+          "Latitude" : "48.8721119",
+          "Longitude" : "2.3652203"
+        }
+      },
+      "Published" : "2020-01-19T11:55:32Z",
+      "Title" : "Le Comptoir Général",
+      "Updated" : "2020-01-19T11:55:32Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -0.0767882, 51.5485298 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=17316092362422860511",
+      "Location" : {
+        "Address" : "52 Boleyn Road, London N16 8JP, United Kingdom",
+        "Business Name" : "House of MoMo",
+        "Country Code" : "GB",
+        "Geo Coordinates" : {
+          "Latitude" : "51.5485298",
+          "Longitude" : "-0.0767882"
+        }
+      },
+      "Published" : "2020-01-09T14:04:02Z",
+      "Title" : "House of MoMo",
+      "Updated" : "2020-01-09T14:04:02Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -0.1518688, 51.5198954 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=5471297730831309118",
+      "Location" : {
+        "Address" : "93 Marylebone High Street, London W1U 4RE, United Kingdom",
+        "Business Name" : "The Marylebone",
+        "Country Code" : "GB",
+        "Geo Coordinates" : {
+          "Latitude" : "51.5198954",
+          "Longitude" : "-0.1518688"
+        }
+      },
+      "Published" : "2020-01-09T13:22:32Z",
+      "Title" : "The Marylebone",
+      "Updated" : "2020-01-09T13:22:32Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
+      "coordinates" : [ -79.3696348, 43.6501770 ],
+      "type" : "Point"
+    },
+    "properties" : {
+      "Google Maps URL" : "http://maps.google.com/?cid=4869963787337918633",
+      "Location" : {
+        "Address" : "132 Front Street East, Toronto, ON M5A 1E2, Canada",
+        "Business Name" : "Museum of Illusions",
+        "Country Code" : "CA",
+        "Geo Coordinates" : {
+          "Latitude" : "43.6501770",
+          "Longitude" : "-79.3696348"
+        }
+      },
+      "Published" : "2019-12-31T13:02:06Z",
+      "Title" : "Museum of Illusions",
+      "Updated" : "2019-12-31T13:02:06Z"
+    },
+    "type" : "Feature"
+  }, {
+    "geometry" : {
       "coordinates" : [ 2.3344840, 48.8819398 ],
       "type" : "Point"
     },
@@ -266,27 +434,6 @@
       "Published" : "2019-11-09T00:49:38Z",
       "Title" : "Tlachiquero Mezcal",
       "Updated" : "2019-11-09T00:49:38Z"
-    },
-    "type" : "Feature"
-  }, {
-    "geometry" : {
-      "coordinates" : [ 2.3648470, 48.8612368 ],
-      "type" : "Point"
-    },
-    "properties" : {
-      "Google Maps URL" : "http://maps.google.com/?cid=17286319122938403524",
-      "Location" : {
-        "Address" : "25 Rue du Pont aux Choux, 75003 Paris, France",
-        "Business Name" : "Distrito Francés Marais",
-        "Country Code" : "FR",
-        "Geo Coordinates" : {
-          "Latitude" : "48.8612368",
-          "Longitude" : "2.3648470"
-        }
-      },
-      "Published" : "2019-11-09T00:45:47Z",
-      "Title" : "Distrito Francés Marais",
-      "Updated" : "2019-11-09T00:45:47Z"
     },
     "type" : "Feature"
   }, {
@@ -1033,7 +1180,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -81.6335749, 44.1794028 ],
+      "coordinates" : [ -81.6335639, 44.1794083 ],
       "type" : "Point"
     },
     "properties" : {
@@ -1043,8 +1190,8 @@
         "Business Name" : "Hawgs Breath Saloon",
         "Country Code" : "CA",
         "Geo Coordinates" : {
-          "Latitude" : "44.1794028",
-          "Longitude" : "-81.6335749"
+          "Latitude" : "44.1794083",
+          "Longitude" : "-81.6335639"
         }
       },
       "Published" : "2019-03-27T23:07:33Z",
@@ -1054,7 +1201,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -81.3870936, 44.4381219 ],
+      "coordinates" : [ -81.3870472, 44.4381306 ],
       "type" : "Point"
     },
     "properties" : {
@@ -1064,8 +1211,8 @@
         "Business Name" : "The Wismer House",
         "Country Code" : "CA",
         "Geo Coordinates" : {
-          "Latitude" : "44.4381219",
-          "Longitude" : "-81.3870936"
+          "Latitude" : "44.4381306",
+          "Longitude" : "-81.3870472"
         }
       },
       "Published" : "2019-03-27T23:05:01Z",
@@ -1102,7 +1249,7 @@
     "properties" : {
       "Google Maps URL" : "http://maps.google.com/?cid=9217623556021089751",
       "Location" : {
-        "Address" : "5148, 668 6th Avenue, New York, NY 10010, United States",
+        "Address" : "668 6th Avenue #5148, New York, NY 10010, United States",
         "Business Name" : "Dos Toros Taqueria",
         "Country Code" : "US",
         "Geo Coordinates" : {
@@ -1718,7 +1865,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -75.1404880, 6.2377411 ],
+      "coordinates" : [ -75.1405597, 6.2380424 ],
       "type" : "Point"
     },
     "properties" : {
@@ -1728,8 +1875,8 @@
         "Business Name" : "Pesca Deportiva El Cristalino",
         "Country Code" : "CO",
         "Geo Coordinates" : {
-          "Latitude" : "6.2377411",
-          "Longitude" : "-75.1404880"
+          "Latitude" : "6.2380424",
+          "Longitude" : "-75.1405597"
         }
       },
       "Published" : "2018-09-06T02:12:49Z",
@@ -3124,7 +3271,7 @@
     "properties" : {
       "Google Maps URL" : "http://maps.google.com/?cid=13213807327533658589",
       "Location" : {
-        "Address" : "Praça Visconde de Cayru, s/n - Comercio, Salvador - BA, 40015-170, Brazil",
+        "Address" : "Praça Visconde de Cayru, s/n - Comercio, Salvador - BA, 40301-155, Brazil",
         "Business Name" : "Mercado Modelo",
         "Country Code" : "BR",
         "Geo Coordinates" : {
@@ -3139,7 +3286,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -38.5131439, -12.9743421 ],
+      "coordinates" : [ -38.5130232, -12.9744257 ],
       "type" : "Point"
     },
     "properties" : {
@@ -3149,8 +3296,8 @@
         "Business Name" : "Elevador Lacerda",
         "Country Code" : "BR",
         "Geo Coordinates" : {
-          "Latitude" : "-12.9743421",
-          "Longitude" : "-38.5131439"
+          "Latitude" : "-12.9744257",
+          "Longitude" : "-38.5130232"
         }
       },
       "Published" : "2018-04-21T11:44:55Z",
@@ -4283,7 +4430,7 @@
       "Google Maps URL" : "http://maps.google.com/?cid=17278784773215091156",
       "Location" : {
         "Address" : "San Carlos de Bariloche, Doctor Juan Javier Neumeyer 20, R8400 ASB, Río Negro, Argentina",
-        "Business Name" : "Manush",
+        "Business Name" : "Cervecería Manush",
         "Country Code" : "AR",
         "Geo Coordinates" : {
           "Latitude" : "-41.1357638",
@@ -4341,7 +4488,7 @@
       "Google Maps URL" : "http://maps.google.com/?cid=10402868987709789338",
       "Location" : {
         "Address" : "Calle Ugarte 111, Arequipa, Peru",
-        "Business Name" : "Wild Rover Hostel Arequipa",
+        "Business Name" : "Wild Rover Arequipa",
         "Country Code" : "PE",
         "Geo Coordinates" : {
           "Latitude" : "-16.3965962",
@@ -4513,7 +4660,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -77.0336048, -12.0710445 ],
+      "coordinates" : [ -77.0337402, -12.0708603 ],
       "type" : "Point"
     },
     "properties" : {
@@ -4523,8 +4670,8 @@
         "Business Name" : "Magic Water Circuit",
         "Country Code" : "PE",
         "Geo Coordinates" : {
-          "Latitude" : "-12.0710445",
-          "Longitude" : "-77.0336048"
+          "Latitude" : "-12.0708603",
+          "Longitude" : "-77.0337402"
         }
       },
       "Published" : "2017-09-30T22:04:36Z",
@@ -4920,7 +5067,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ 12.4746831, 41.9150283 ],
+      "coordinates" : [ 12.4747162, 41.9150162 ],
       "type" : "Point"
     },
     "properties" : {
@@ -4930,8 +5077,8 @@
         "Business Name" : "L'Antica Pizzeria da Michele",
         "Country Code" : "IT",
         "Geo Coordinates" : {
-          "Latitude" : "41.9150283",
-          "Longitude" : "12.4746831"
+          "Latitude" : "41.9150162",
+          "Longitude" : "12.4747162"
         }
       },
       "Published" : "2017-05-25T21:06:58Z",
@@ -4941,7 +5088,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ 12.4760203, 41.8765589 ],
+      "coordinates" : [ 12.4760277, 41.8765558 ],
       "type" : "Point"
     },
     "properties" : {
@@ -4951,8 +5098,8 @@
         "Business Name" : "Flavio al Velavevodetto",
         "Country Code" : "IT",
         "Geo Coordinates" : {
-          "Latitude" : "41.8765589",
-          "Longitude" : "12.4760203"
+          "Latitude" : "41.8765558",
+          "Longitude" : "12.4760277"
         }
       },
       "Published" : "2017-05-25T21:03:13Z",
@@ -4989,7 +5136,7 @@
     "properties" : {
       "Google Maps URL" : "http://maps.google.com/?cid=6612035312286107638",
       "Location" : {
-        "Address" : "Via dei Neri, 76 R, 50122 Firenze FI, Italy",
+        "Address" : "Via dei Neri, 76R, 50122 Firenze FI, Italy",
         "Business Name" : "Osteria All'antico Vinaio",
         "Country Code" : "IT",
         "Geo Coordinates" : {
@@ -5290,7 +5437,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ 2.1797676, 41.3897956 ],
+      "coordinates" : [ 2.1798369, 41.3897687 ],
       "type" : "Point"
     },
     "properties" : {
@@ -5300,8 +5447,8 @@
         "Business Name" : "Elsa y Fred",
         "Country Code" : "ES",
         "Geo Coordinates" : {
-          "Latitude" : "41.3897956",
-          "Longitude" : "2.1797676"
+          "Latitude" : "41.3897687",
+          "Longitude" : "2.1798369"
         }
       },
       "Published" : "2016-10-08T19:06:33Z",
@@ -5896,7 +6043,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -6.2946531, 36.5296326 ],
+      "coordinates" : [ -6.2946448, 36.5296249 ],
       "type" : "Point"
     },
     "properties" : {
@@ -5906,8 +6053,8 @@
         "Business Name" : "Cien Montaditos",
         "Country Code" : "ES",
         "Geo Coordinates" : {
-          "Latitude" : "36.5296326",
-          "Longitude" : "-6.2946531"
+          "Latitude" : "36.5296249",
+          "Longitude" : "-6.2946448"
         }
       },
       "Published" : "2016-06-25T23:36:52Z",
@@ -5923,7 +6070,7 @@
     "properties" : {
       "Google Maps URL" : "http://maps.google.com/?cid=16234840338206796875",
       "Location" : {
-        "Address" : "11002 Cádiz, Spain",
+        "Address" : "Avenida Duque de Nájera, 3D, 11002 Cádiz, Spain",
         "Business Name" : "Bar Playa de La Caleta",
         "Country Code" : "ES",
         "Geo Coordinates" : {
@@ -5980,7 +6127,7 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ 2.1837076, 41.3836850 ],
+      "coordinates" : [ 2.1837139, 41.3836583 ],
       "type" : "Point"
     },
     "properties" : {
@@ -5990,8 +6137,8 @@
         "Business Name" : "Paradiso",
         "Country Code" : "ES",
         "Geo Coordinates" : {
-          "Latitude" : "41.3836850",
-          "Longitude" : "2.1837076"
+          "Latitude" : "41.3836583",
+          "Longitude" : "2.1837139"
         }
       },
       "Published" : "2016-05-12T19:53:35Z",
@@ -6629,14 +6776,14 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ -2.698217, 43.407962 ],
+      "coordinates" : [ -2.698099, 43.407911 ],
       "type" : "Point"
     },
     "properties" : {
       "Google Maps URL" : "http://maps.google.com/?cid=12040165155838548472",
       "Location" : {
-        "Latitude" : "43.407962",
-        "Longitude" : "-2.698217"
+        "Latitude" : "43.407911",
+        "Longitude" : "-2.698099"
       },
       "Published" : "2016-02-19T18:35:19Z",
       "Title" : "El Puerto",
@@ -7827,22 +7974,6 @@
     "type" : "Feature"
   }, {
     "geometry" : {
-      "coordinates" : [ 2.376084, 48.855857 ],
-      "type" : "Point"
-    },
-    "properties" : {
-      "Google Maps URL" : "http://maps.google.com/?q=80+Rue+de+la+Roquette,+75011+Paris,+France&ftid=0x47e66df87b009077:0x96550a3b6aa51bd6",
-      "Location" : {
-        "Latitude" : "48.855857",
-        "Longitude" : "2.376084"
-      },
-      "Published" : "2015-10-11T11:03:25Z",
-      "Title" : "80 Rue de la Roquette, 75011 Paris, France",
-      "Updated" : "2015-10-11T11:03:25Z"
-    },
-    "type" : "Feature"
-  }, {
-    "geometry" : {
       "coordinates" : [ 2.389092, 48.844374 ],
       "type" : "Point"
     },
@@ -7871,22 +8002,6 @@
       "Published" : "2015-09-29T18:25:21Z",
       "Title" : "Marienstraße 21, 80331 München, Germany",
       "Updated" : "2015-09-29T18:25:21Z"
-    },
-    "type" : "Feature"
-  }, {
-    "geometry" : {
-      "coordinates" : [ 2.368867, 48.857848 ],
-      "type" : "Point"
-    },
-    "properties" : {
-      "Google Maps URL" : "http://maps.google.com/?q=32+Rue+Amelot,+75011+Paris,+France&ftid=0x47e66dffb1363931:0x9df3de2a3e4e34e8",
-      "Location" : {
-        "Latitude" : "48.857848",
-        "Longitude" : "2.368867"
-      },
-      "Published" : "2015-09-29T13:29:29Z",
-      "Title" : "32 Rue Amelot, 75011 Paris, France",
-      "Updated" : "2015-09-29T13:29:29Z"
     },
     "type" : "Feature"
   }, {

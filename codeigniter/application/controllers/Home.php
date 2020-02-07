@@ -38,7 +38,7 @@ class Home extends CI_Controller {
 
                 $fromname = $name;
                 $from = $email;
-                $to = 'ryan@ryanheadley.net';
+                $to = 'weroc@me.com';
 
                 $this->load->library('email');
                 $this->email->from($from,$fromname);

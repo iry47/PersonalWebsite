@@ -1,50 +1,53 @@
+
 /*menu styling*/
 .main-navigation {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    left: 0;
+    position: absolute;
+    top: 50px;
+    width: 600px;
+    right: 0;
     max-width: 100%;
     margin-right: 10px;
     text-align: center;
-    background-color: #252627 !important;
 }
-
 .main-navigation ul {
     align-items: center;
+	width: 600px;
     margin: 0px;
     padding: 0px;
 }
-
 .main-navigation ul li {
     display: inline-block;
     list-style-type: none;
 }
-
 .main-navigation ul li a {
     display: inline-flex;
-    padding: 10px;
-    font-family: courier;
+    padding: 7px;
+    font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
     font-size: 16px;
     text-decoration: none;
-    color: rgb(193, 208, 220) !important;
+	color: #333333;
 
 }
-
 .main-navigation ul li a span {
     margin-left: 7px;
 }
-
+#menu{
+}
 #miniMenu {
     display: none;
     font-size: 36px;
     margin-right: 20px;
     cursor: pointer;
 }
+#main-nav{
+	display: none;
+	justify-content: space-between;
+}
 
 body{
     color: rgb(193, 208, 220) !important;
-    background-color: #313233 !important;
+    background-color: rgb(70,65,89) !important;
 }
 
 /*general container and section styling*/
@@ -52,82 +55,104 @@ body{
     padding-top: 20px;
     margin-top: 40px;
 }
-
 #container > section {
     font-family: courier;
     min-height: 80vh;
     overflow: hidden;
 }
-
 .sectionDiv {
     padding: 20px;
     opacity: 0;
 }
-
 h1{
-    font-weight: 0 !important;
+	font-family: DIN-Condensed-Bold;
 }
-
 h2 {
-    font-size: 40px !important;
+    font-size: 40px;
     margin-bottom:10vh; !important;
     font-weight: 100 !important;
 }
-
 h3 {
     font-size: 24px !important;
     margin-top: 0px !important;
 }
+p{
+	font-family: SpaceMono-Regular;
+	color: rgb(107, 186, 112);
+}
+.above-title{
+	font-size: 16px;
+	color: gray;
+	margin-bottom: 10px;
+}
 
+.fixmargin{
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
 /*about section*/
 #about {
-    padding-top: 25vh;
-    margin: 20px;
+	padding: 0;
 }
 #aboutText {
     display: inline-block;
-    max-width: 90vh;
     float: left;
-    margin-right: 40px;
+	padding: 20vh 5vw 0;
 }
 
 #aboutText p {
-    font-size: 20px;;
+    font-size: 16px;
     padding-top: 10px;
-    display: none;
+	text-align: justify;
 }
 
 #aboutImg {
-    max-width: 200px;
-    float: left;
+    max-width: 300px;
+	float: unset;
+	margin: 0 auto;
+
     display: none;
+}
+.select2-choice{
+	border: 1px solid rgb(193, 208, 220) !important;
+	border-radius: unset !important;
+}
+.select2-container{
+	width: 120px;
+	margin: 0 auto;
 }
 
 #meImg{
     width: 100%;
-    margin-left: 50px;
     border-radius: 20px;
 }
 
 /*travel section*/
-#travelDiv{
-    padding: 20px;
-}
 
 #instaDiv{
     text-align: center;
 }
 #mapDiv{
-    text-align: center;
+	padding-top: 50px;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 90vh;
 }
 
 #mapWindow{
-    width: 90vw;
-    height: 90vh;
+	position: absolute;
+	left: 50%;
+	margin-left: -45vw;
+	width: 90vw;
+	height: 90vh;
 }
 
 #map{
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .map-icon-label .map-icon{
@@ -136,24 +161,20 @@ h3 {
 
 /*instagram section*/
 #instaFeed{
-    text-align: center;
+	text-align: center;
 }
 .instapic{
     width: min-content;
-    margin:5px;
-    display: inline-block;
+	padding: 5px;
+	display: inline-block;
 }
+
 
 .instacap{
     text-align: left;
     width: 100%;
     word-wrap: break-word;
     font-family: Neue Helvetica;
-}
-
-#mapWindow{
-    display: inline-block;
-    position: relative;
 }
 
 #mapTitle{
@@ -184,6 +205,7 @@ h3 {
 
 #blogDiv {
     text-align: center;
+	position: relative;
 }
 
 #blogTitle {
@@ -199,12 +221,19 @@ h3 {
     float: right;
 }
 
+.blog-articles{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 .list {
-    min-width: 300px;
-    max-width: 300px;
+    width: 100%;
+	height: 400px;
     margin: 15px;
-    float:left;
-    display: inline-block;
+    display: flex;
+	flex-direction: column;
+	box-shadow: 5px 10px rgb(70,65,89);;
 }
 
 .list-image-div {
@@ -215,7 +244,7 @@ h3 {
 }
 
 .list-image {
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
 	border-radius: 5px;
@@ -224,6 +253,13 @@ h3 {
 
 .list-text{
     padding: 5px;
+	text-align: center;
+	height: 200px;
+	background-color: rgb(70,65,89);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .list-title {
@@ -239,11 +275,7 @@ h3 {
 .list-loc {
     font-size: 11px;
     color: #1ABC9C;
-    float: left;
     margin-top: 5px;
-}
-.blog-articles{
-    display: inline-block;
 }
 /*qualifications section*/
 .qualifications {
@@ -280,14 +312,18 @@ h3 {
 }
 
 .languagesDiv {
-    min-width: 200px;
-    float:left;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+    float:right;
+	text-align: left;
+	border: 1px solid rgb(222,255,139);
 }
 
 #languageSelect {
     display: inline-block;
     float: left;
-    max-width: 200px;
+    width: 80%;
     margin-bottom: 20px;
 }
 
@@ -302,6 +338,43 @@ h3 {
     visibility: hidden;
 }
 
+.qual-text{
+	float: right;
+	padding: 30px 0;
+	max-width: 500px;
+}
+.qual-text p{
+	text-align: left;
+	color: rgb(107,186,112);
+}
+.section-title{
+	float: right;
+	text-align: left;
+}
+.degree{
+	color: rgb(222,255,139);
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	float:left;
+}
+.year{
+	display: flex;
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	font-family: DIN-Condensed-Bold;
+	color: dimgrey;
+	text-transform: uppercase;
+	float: right;
+}
+.degree-loc{
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	color: rgb(107,186,112);
+}
+.degree-loc i{
+	margin-right: 10px;
+	color: rgb(107,186,112);
+}
 /*experience section*/
 #experience {
     min-height: 90vh !important;
@@ -333,11 +406,13 @@ h3 {
 .experienceImg img {
     width: 100%;
 }
-
 #thingsUsed {
-    display: inline-block;
-    float: left;
+	display: inline-block;
+	float: left;
+	position: relative;
+	padding: 0;
 }
+
 
 #virtualLanguages {
     display: inline-block;
@@ -366,6 +441,12 @@ h3 {
 
 .checkbox {
     display: block;
+	color: rgb(108,123,149);
+}
+
+
+.exprecience-history{
+	min-height: 400px !important;
 }
 
 /*testimonials section*/
@@ -378,34 +459,7 @@ h3 {
 }
 
 /*contact section*/
-#contact {
-    min-height: 100vh !important;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0px;
-}
 
-#contactDiv {
-    padding: 20px;
-}
-
-#contactArticle {
-    max-width: 500px;
-}
-
-#contactForm {
-    max-width: 90vh;
-}
-
-#contactForm div {
-    margin: 10px;
-}
-
-#contactArticle a:hover {
-    cursor: pointer;
-/*    color: blue;*/
-}
 
 #socialLinks i{    
     font-size: 32px;
@@ -417,16 +471,9 @@ h3 {
     color: #1ABC9C;
 }
 
-#contactName {
-    max-width: 300px;
-}
 
-#contactEmail {
-    max-width: 300px;
-}
-
-#msg.formcontrol {
-    resize: both !important;
+#msg {
+	min-height: 200px;
 }
 
 #sendBtn {
@@ -441,60 +488,33 @@ h3 {
     border-bottom-color: rgb(73, 78, 82) !important;
     border-left-color: rgb(73, 78, 82) !important;
     background-color: rgb(37, 38, 39) !important;
-    color: rgb(193, 208, 220) !important;
+    color: rgb(107,186,112);
     box-shadow: none !important;
+	border-radius: unset;
 }
 
+footer{
+	position:relative;
+	height: 150px;
+	overflow: hidden;
+	background-color: unset !important;
+}
+footer #menu{
+	height: 25px;
+	position: absolute;
+	right: 0;
+	bottom: 40px;
+	width: 100%;
+}
+footer #main-nav{
+	position: absolute;
+	width: 600px;
+	top: 0;
+}
 .rc-anchor-light{
     background-color: rgb(39, 40, 41) !important;
     color: rgb(242, 240, 238) !important;
 }
 
 /* How menu will react to small screens. */
-@media screen and (max-width:480px){
-    #menu{
-        display: block !important;
-    }
-    #miniMenu {
-        display: block;
-        float: right;
-    }
-    
-    .main-navigation {
-        display: none;
-        top: 70px;
-        position: absolute;
-        background-color: rgba(300,300,300,0.9);
-    }
-    
-    .main-navigation ul li{
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #878387   
-    }
-    
-    #about {
-        padding-top: 0px !important;
-    }
-    
-    .smallExp {
-        display: none;
-        background-color:#fff;
-        margin-left: 0px !important;
-        padding-left: 5px !important;
-    }
-    
-}
 
-@media screen and (min-width: 490px) {
-    .main-navigation {
-        display: inline-block !important;
-    }
-
-}
-
-@media screen and (min-width:730px){
-    #aboutImg{
-        margin-top: 100px;
-    }
-}
