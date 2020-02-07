@@ -1,0 +1,500 @@
+/*menu styling*/
+.main-navigation {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    max-width: 100%;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #252627 !important;
+}
+
+.main-navigation ul {
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.main-navigation ul li a {
+    display: inline-flex;
+    padding: 10px;
+    font-family: courier;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(193, 208, 220) !important;
+
+}
+
+.main-navigation ul li a span {
+    margin-left: 7px;
+}
+
+#miniMenu {
+    display: none;
+    font-size: 36px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+body{
+    color: rgb(193, 208, 220) !important;
+    background-color: #313233 !important;
+}
+
+/*general container and section styling*/
+#container {
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+#container > section {
+    font-family: courier;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.sectionDiv {
+    padding: 20px;
+    opacity: 0;
+}
+
+h1{
+    font-weight: 0 !important;
+}
+
+h2 {
+    font-size: 40px !important;
+    margin-bottom:10vh; !important;
+    font-weight: 100 !important;
+}
+
+h3 {
+    font-size: 24px !important;
+    margin-top: 0px !important;
+}
+
+/*about section*/
+#about {
+    padding-top: 25vh;
+    margin: 20px;
+}
+#aboutText {
+    display: inline-block;
+    max-width: 90vh;
+    float: left;
+    margin-right: 40px;
+}
+
+#aboutText p {
+    font-size: 20px;;
+    padding-top: 10px;
+    display: none;
+}
+
+#aboutImg {
+    max-width: 200px;
+    float: left;
+    display: none;
+}
+
+#meImg{
+    width: 100%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+/*travel section*/
+#travelDiv{
+    padding: 20px;
+}
+
+#instaDiv{
+    text-align: center;
+}
+#mapDiv{
+    text-align: center;
+}
+
+#mapWindow{
+    width: 90vw;
+    height: 90vh;
+}
+
+#map{
+    height: 100%;
+}
+
+.map-icon-label .map-icon{
+    font-size: 12px !important;
+}
+
+/*instagram section*/
+#instaFeed{
+    text-align: center;
+}
+.instapic{
+    width: min-content;
+    margin:5px;
+    display: inline-block;
+}
+
+.instacap{
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    font-family: Neue Helvetica;
+}
+
+#mapWindow{
+    display: inline-block;
+    position: relative;
+}
+
+#mapTitle{
+    margin-top: 40px !important;
+}
+
+#filter{
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    border: 0px solid black;
+    background-color:  #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#filterChevron{
+    margin-left: 10px;
+}
+
+.filterCheckbox{
+    margin: 10px;
+}
+
+.checkFilter {
+    display: none;
+}
+
+#blogDiv {
+    text-align: center;
+}
+
+#blogTitle {
+    margin-top: 30px !important;
+    text-align: center;
+}
+.articleTab {
+    width: 30vw;
+    text-align: left;
+}
+
+.tab-chev {
+    float: right;
+}
+
+.list {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 15px;
+    float:left;
+    display: inline-block;
+}
+
+.list-image-div {
+    width:100%;
+    height: 200px;
+    display:block;
+    margin-right:10px;
+}
+
+.list-image {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100%;
+	border-radius: 5px;
+	background-position: center;
+}
+
+.list-text{
+    padding: 5px;
+}
+
+.list-title {
+    display: block;
+    color: rgb(193, 208, 220);
+}
+
+.list-title:hover{
+    text-decoration: underline;
+    color: rgb(193, 208, 220);
+}
+
+.list-loc {
+    font-size: 11px;
+    color: #1ABC9C;
+    float: left;
+    margin-top: 5px;
+}
+.blog-articles{
+    display: inline-block;
+}
+/*qualifications section*/
+.qualifications {
+    display: inline-block;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.qualifications p{
+    margin-bottom: 0px;
+}
+
+#queensFigure {
+    max-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#degreesDiv {
+    display: inline-block;
+    margin-right: 50px;
+    float:left;
+    clear: left;
+}
+#degreesDiv img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    display: block;
+}
+
+.degree-loc {
+    font-size: 12px;
+}
+
+.languagesDiv {
+    min-width: 200px;
+    float:left;
+}
+
+#languageSelect {
+    display: inline-block;
+    float: left;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.languagesDiv article > div {
+    display: block;
+    margin-right: 40px;
+    width: 20vw;
+}
+
+#selectLang {
+    display: block;
+    visibility: hidden;
+}
+
+/*experience section*/
+#experience {
+    min-height: 90vh !important;
+}
+
+.positions{
+    display: inline-block;
+    float: left;
+    margin-right: 40px;
+}
+
+.clickExp {
+    background-color: #1ABC9C;
+    color: rgb(193, 208, 220);
+    margin: 2px;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.experienceImg {
+    display: inline-block;
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experienceImg img {
+    width: 100%;
+}
+
+#thingsUsed {
+    display: inline-block;
+    float: left;
+}
+
+#virtualLanguages {
+    display: inline-block;
+    float: left;
+    max-width: 150px;
+    margin-right: 40px;
+}
+
+#frameworks {
+    display: block;
+    float: left;
+    clear: right;
+    max-width: 150px;
+}
+
+#moreInfo {
+    display: block;
+    float: left;
+    max-width: 500px;
+    margin-left: 10vh;
+}
+
+#moreInfo p {
+    font-size: 16px;
+}
+
+.checkbox {
+    display: block;
+}
+
+/*testimonials section*/
+.testimonialArticle{
+    margin: 40px 30px 20px;
+}
+
+.tesQuote{
+    max-width: 60vw;
+}
+
+/*contact section*/
+#contact {
+    min-height: 100vh !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+}
+
+#contactDiv {
+    padding: 20px;
+}
+
+#contactArticle {
+    max-width: 500px;
+}
+
+#contactForm {
+    max-width: 90vh;
+}
+
+#contactForm div {
+    margin: 10px;
+}
+
+#contactArticle a:hover {
+    cursor: pointer;
+/*    color: blue;*/
+}
+
+#socialLinks i{    
+    font-size: 32px;
+    margin: 10px;
+}
+
+#socialLinks i:hover {
+    cursor: pointer;
+    color: #1ABC9C;
+}
+
+#contactName {
+    max-width: 300px;
+}
+
+#contactEmail {
+    max-width: 300px;
+}
+
+#msg.formcontrol {
+    resize: both !important;
+}
+
+#sendBtn {
+    float:left;
+    clear: both !important;
+    margin-top:0px;
+}
+
+.form-control{
+    border-top-color: rgb(73, 78, 82) !important;
+    border-right-color: rgb(73, 78, 82) !important;
+    border-bottom-color: rgb(73, 78, 82) !important;
+    border-left-color: rgb(73, 78, 82) !important;
+    background-color: rgb(37, 38, 39) !important;
+    color: rgb(193, 208, 220) !important;
+    box-shadow: none !important;
+}
+
+.rc-anchor-light{
+    background-color: rgb(39, 40, 41) !important;
+    color: rgb(242, 240, 238) !important;
+}
+
+/* How menu will react to small screens. */
+@media screen and (max-width:480px){
+    #menu{
+        display: block !important;
+    }
+    #miniMenu {
+        display: block;
+        float: right;
+    }
+    
+    .main-navigation {
+        display: none;
+        top: 70px;
+        position: absolute;
+        background-color: rgba(300,300,300,0.9);
+    }
+    
+    .main-navigation ul li{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #878387   
+    }
+    
+    #about {
+        padding-top: 0px !important;
+    }
+    
+    .smallExp {
+        display: none;
+        background-color:#fff;
+        margin-left: 0px !important;
+        padding-left: 5px !important;
+    }
+    
+}
+
+@media screen and (min-width: 490px) {
+    .main-navigation {
+        display: inline-block !important;
+    }
+
+}
+
+@media screen and (min-width:730px){
+    #aboutImg{
+        margin-top: 100px;
+    }
+}
