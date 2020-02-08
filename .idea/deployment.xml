@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="Dev">
+    <serverData>
+      <paths name="Dev">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/dev" local="$PROJECT_DIR$/codeigniter" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Site">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/www" local="$PROJECT_DIR$/codeigniter" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
