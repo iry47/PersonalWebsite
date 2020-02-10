@@ -39,17 +39,19 @@
         <script type="text/javascript" src="<?= base_url('assets/scripts/map-icons-master/dist/js/map-icons.js')?>"></script>
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel=stylesheet href="<?= base_url('assets/dist/css/flat-ui.css')?>">
 
         <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="<?= base_url('assets/scripts/home.js')?>"></script>
         <script src="<?= base_url('assets/scripts/home.js')?>"></script>
         <script src="<?= base_url('assets/dist/js/flat-ui.js')?>"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsQaXloxPg8Os1RrHQSQa1HimaE57hkPQ"></script>
         <script src="<?= base_url('assets/scripts/markerclustererplus/src/markerclusterer.js')?>"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -59,7 +61,30 @@
         <!-- The navigation menu of the site -->
         <header id="header">
             <div id="menu">
-                <div id="miniMenu" class="fa fa-bars"></div>
+                <div id="miniMenu" class="dropdown">
+					<i class="dropdown-toggle fa fa-bars" data-toggle="dropdown"></i>
+					<div class="dropdown-menu dropdown-menu-right" role="menu">
+						<a href="#about" class="dropdown-item">
+							<span id="aboutMenuText">About</span>
+						</a>
+						<a href="#travel" class="dropdown-item">
+							<span id="travelMenuText">Travel</span>
+						</a>
+						<a href="#qualifications" class="dropdown-item">
+							<span id="qualMenuText">Qualifications</span>
+						</a>
+						<a href="#experience" class="dropdown-item">
+							<span id="expMenuText">Experience</span>
+						</a>
+						<a href="#testimonials" class="dropdown-item">
+							<span id="tesMenuText">Portfolio</span>
+						</a>
+						<a href="#contact" class="dropdown-item">
+							<span id="contactMenuText">Contact</span>
+						</a>
+					</div>
+				</div>
+				<img id="top-logo" src="<?= base_url('assets/images/logo_Ryan_circle.png') ?>" class="bg-blob logo">
                 <nav id="main-nav" class="main-navigation">
                     <ul>
                         <li>
@@ -388,6 +413,7 @@
                                 <div class="list-text">
                                     <a class="list-title" href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>"><span>Getting a ski season job</span></a>
                                     <p class="list-loc"><i class="fas fa-map-marker-alt"></i> Champagny en Vanoise, France</p>
+									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>">READ</a></button>
                                 </div>
                             </div>
                             <div class="list">
@@ -519,25 +545,31 @@
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 						<div class="row">
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 exprecience-history">
-								<div class="positions">
-									<div id="positionsTable">
-										<div id="flRole" class="clickExp">Remote Freelancer</div>
-										<div id="frontDevRole" class="clickExp">Front-end Developer - This Website!</div>
-										<div id="wgRole" class="clickExp">Software Developer - The Woodbridge Group</div>
-										<div id="tmxRole" class="clickExp">Software Developer - TMX Group</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 experience-history">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 positions">
+											<div id="positionsTable">
+												<div id="frontDevRole" class="clickExp">Kidwelcome</div>
+												<div id="flRole" class="clickExp">Remote Freelancer</div>
+												<div id="wgRole" class="clickExp">The Woodbridge Group</div>
+												<div id="tmxRole" class="clickExp">TMX Group</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+										<div id="moreInfo" class="smallExp">
+											<blockquote>
+												<p id="flInfo">For the past three years I have been a remote freelancer, focusing primarily on front &amp; back end web development.</p>
+												<p id="fdInfo">As the CTO of Kidwelcome, I've created, managed and maintain the entire application as the solo developer.</p>
+												<p id="wgInfo">Converted the existing reporting system from an ASP.NET Web Form application to an ASP.NET MVC application, designed and created a full client and server side reporting site and implemented the Telerik Kendo UI.</p>
+												<p id="tmxInfo">I worked with the team put in charge of developing the new risk analysis software. My tasks varied from programming a web application, developping a RESTful web service to documentation. This allowed me to gain valuable experience in several different computing languages: C#, HTML5, Javascript, CSS, MySQL and Powershell.</p>
+											</blockquote>
+										</div>
 									</div>
 								</div>
-								<div id="moreInfo" class="smallExp">
-									<blockquote>
-										<p id="flInfo">For the past three years I have been a remote freelancer, focusing primarily on web development contracts and working front &amp; back end.</p>
-										<p id="fdInfo">This site was designed to be a simple introduction to my coding abilities as well showcasing my experience.</p>
-										<p id="wgInfo">Converted the existing reporting system from an ASP.NET Web Form application to an ASP.NET MVC application, designed and created a full client and server side reporting site and implemented the Telerik Kendo UI.</p>
-										<p id="tmxInfo">I worked with the team put in charge of developing the new risk analysis software. My tasks varied from programming a web application, developping a RESTful web service to documentation. This allowed me to gain valuable experience in several different computing languages: C#, HTML5, Javascript, CSS, MySQL and Powershell.</p>
-									</blockquote>
-								</div>
 							</div>
-							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 languages-frameworks">
 								<div id="thingsUsed" class="smallExp">
 									<img src="<?= base_url('assets/images/green_background_6.png') ?>" class="bg-blob bg6">
 									<img src="<?= base_url('assets/images/illustration_click.png') ?>" class="bg-blob bgc">
@@ -577,7 +609,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Wordpress, jQuery, APIs</p>
-									<button class="btn"><a href="https://opticaltel.com">GO TO WEB<i class="fas fa-chevron-up"></i></a></button>
+									<button class="btn"><a href="https://opticaltel.com">GO TO WEB <i class="fas fa-chevron-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">
@@ -586,7 +618,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, CRAFT, jQuery, APIs</p>
-									<button class="btn"><a href="https://lecontactmoderne.com">GO TO WEB<i class="fas fa-chevron-up"></i></a></button>
+									<button class="btn"><a href="https://lecontactmoderne.com">GO TO WEB <i class="fas fa-chevron-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">
@@ -595,7 +627,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Craft, jQuery, APIs</p>
-									<button class="btn"><a href="https://viggo.fr">GO TO WEB<i class="fas fa-chevron-up"></i></a></button>
+									<button class="btn"><a href="https://viggo.fr">GO TO WEB <i class="fas fa-chevron-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">
@@ -604,7 +636,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, jQuery, APIs</p>
-									<button class="btn"><a href="https://kidwelcome.com">GO TO WEB<i class="fas fa-chevron-up"></i></a></button>
+									<button class="btn"><a href="https://kidwelcome.com">GO TO WEB <i class="fas fa-chevron-up"></i></a></button>
 								</div>
 							</div>
 							<!--                        <div class="portfolio">-->
@@ -711,41 +743,6 @@
 		<img src="<?= base_url('assets/images/green_background_10.png') ?>" class="bg-blob bg10">
 		<div id="menu">
 			<img src="<?= base_url('assets/images/logo_Ryan.png') ?>" class="bg-blob logo">
-			<div id="miniMenu" class="fa fa-bars"></div>
-			<nav id="main-nav" class="main-navigation">
-				<ul>
-					<li>
-						<a href="#about">
-							<span id="aboutMenuText">About</span>
-						</a>
-					</li>
-					<li>
-						<a href="#travel">
-							<span id="travelMenuText">Travel</span>
-						</a>
-					</li>
-					<li>
-						<a href="#qualifications">
-							<span id="qualMenuText">Qualifications</span>
-						</a>
-					</li>
-					<li>
-						<a href="#experience">
-							<span id="expMenuText">Experience</span>
-						</a>
-					</li>
-					<li>
-						<a href="#testimonials">
-							<span id="tesMenuText">Portfolio</span>
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							<span id="contactMenuText">Contact</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
 		</div>
 	</footer>
 

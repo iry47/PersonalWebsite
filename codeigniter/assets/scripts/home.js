@@ -110,14 +110,6 @@ $(document).ready(function () {
         });
     }
 
-
-
-    //small screen menu functionality
-    $('#miniMenu').unbind('click').bind('click', function (e) {
-        $('#main-nav').slideToggle();
-        
-    });
-
     $('.main-navigation li a').click(function(event){
         var targetSelection = $(this).attr('href');
         var scrTo = $(targetSelection).offset().top;
@@ -130,7 +122,7 @@ $(document).ready(function () {
     function activateExp(exp){
                 switch(exp){
                     case "flRole":
-                        $("#flRole").css('color','#fff');
+                        $("#flRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
                         $('#flInfo').show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
@@ -144,7 +136,7 @@ $(document).ready(function () {
                         $('#ajaxCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "frontDevRole":
-                        $("#frontDevRole").css('color','#fff');
+                        $("#frontDevRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
                         $('#fdInfo').show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
@@ -154,7 +146,7 @@ $(document).ready(function () {
                         $('#jqueryCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "wgRole":
-                        $("#wgRole").css('color','#fff');
+                        $("#wgRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
                         $("#wgInfo").show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
@@ -166,7 +158,7 @@ $(document).ready(function () {
                         $('#sqlCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "tmxRole":
-                        $("#tmxRole").css('color','#fff');
+                        $("#tmxRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
                         $("#tmxInfo").show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
@@ -178,7 +170,7 @@ $(document).ready(function () {
                         $('#cSharpCheck').css('color','rgb(70, 65, 89)');
                         break;
                     case "studyRole":
-                        $("#studyRole").css('color','#fff');
+                        $("#studyRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
                         $("#studyInfo").show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
@@ -192,12 +184,13 @@ $(document).ready(function () {
                         break;
 
                 }
+                $('#thingsUsed').show();
             }   
             
     function deactivateExp(exp){
                  switch(exp){
                     case "flRole":
-                         $("#flRole").css('color','#34495e');
+                         $("#flRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
                         $('#flInfo').hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
@@ -211,7 +204,7 @@ $(document).ready(function () {
                          $('#ajaxCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "frontDevRole":
-                         $("#frontDevRole").css('color','#34495e');
+                         $("#frontDevRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
                         $('#fdInfo').hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
@@ -221,7 +214,7 @@ $(document).ready(function () {
                         $('#jqueryCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "wgRole":
-                         $("#wgRole").css('color','#34495e');
+                         $("#wgRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
                         $("#wgInfo").hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
@@ -233,7 +226,7 @@ $(document).ready(function () {
                         $('#sqlCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "tmxRole":
-                         $("#tmxRole").css('color','#34495e');
+                         $("#tmxRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
                         $("#tmxInfo").hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
@@ -245,7 +238,7 @@ $(document).ready(function () {
                         $('#cSharpCheck').css('color','rgb(108, 123, 149)');
                         break;
                     case "studyRole":
-                         $("#studyRole").css('color','#34495e');
+                         $("#studyRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
                         $("#studyInfo").hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
@@ -259,6 +252,7 @@ $(document).ready(function () {
                         break;
 
                 }
+		$('#thingsUsed').hide();
             }
         
     //experience device functionality

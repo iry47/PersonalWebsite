@@ -33,6 +33,25 @@ $white: rgb(255,255,223);
 section{
   padding: 100px 0;
 }
+#top-logo{
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  width: 45px;
+  display: block;
+  left: 30px;
+}
+.dropdown-toggle::after{
+  display: none !important;
+}
+#miniMenu{
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  display: block;
+  color: $white;
+  z-index: 99;
+}
 .btn{
   border: 1px solid rgb(193, 208, 220) !important;
   border-radius: unset !important;
@@ -73,7 +92,7 @@ section{
   left: 0;
 }
 .bg7{
-  left: -50vw;
+  left: -43vw;
   top: 0px;
   width: 100%;
 }
@@ -95,7 +114,7 @@ section{
 }
 .bg8{
   width: 300px;
-  left: 50%;
+  left: 55%;
   top: 120%;
 }
 .bg9{
@@ -137,14 +156,31 @@ section{
   text-shadow: -1px -1px 0 rgb(193, 208, 220), 1px -1px 0 rgb(193, 208, 220), -1px 1px 0 rgb(193, 208, 220), 1px 1px 0 rgb(193, 208, 220);
 }
 
+.languagesDiv{
+  margin-top: 25px;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  float:right;
+  text-align: left;
+  border: 1px solid rgb(222,255,139);
+
+  article > div {
+	display: block;
+	margin-right: 40px;
+	width: 20vw;
+  }
+}
 .portfolio {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   .portfolio-item {
 	display: inline-block;
 	position: relative;
-	width: 130px;
+	width: 45%;
+	margin-bottom: 50px;
   }
 
   .portfolio-image-div {
@@ -155,8 +191,8 @@ section{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 130px;
-	width: 130px;
+	height: 150px;
+	width: 150px;
   }
 
   .portfolio-text {
@@ -166,6 +202,7 @@ section{
 	align-items: center;
 	z-index: 1;
 	padding: 10px;
+	min-height: 50%;
   }
 
   .portfolio-loc {
@@ -175,7 +212,126 @@ section{
 	font-size: 14px;
   }
 }
+#experience{
+  min-height: 90vh !important;
 
+  .clickExp {
+	color: $dark_green;
+	margin: 2px;
+	white-space: nowrap;
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	font-size: 24px;
+  }
+  .positions{
+	display: inline-block;
+	float: left;
+	margin-right: 40px;
+
+	#positionsTable{
+	  display: flex;
+	  flex-direction: column;
+
+	  #thingsUsed{
+		background-image: url(https://dev.ryanheadley.net/assets/images/green_background_6.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100vw;
+		left: -30px;
+		padding: 13px 30px;
+	  }
+	}
+  }
+  .experienceImg {
+	display: inline-block;
+	max-width: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  }
+
+  .experienceImg img {
+	width: 100%;
+  }
+  #moreInfo {
+	display: block;
+	float: left;
+
+	p{
+	  font-family: SpaceMono-Regular;
+	  color: $light_green;
+	  font-size: 16px;
+	}
+	blockquote{
+	  border: none;
+	  padding: 0;
+	  margin: 0;
+	}
+  }
+  .languages-frameworks{
+	text-align: center;
+
+	#thingsUsed{
+	  display: none;
+	}
+  }
+
+
+}
+#blog{
+  .blog-articles{
+	flex-direction: column;
+
+	.list{
+	  width: 100%;
+	  height: 400px;
+	  margin: 15px;
+	  display: flex;
+	  flex-direction: column;
+
+	  .list-image-div {
+		width:100%;
+		height: 200px;
+		display:block;
+		margin-right:10px;
+	  }
+
+	  .list-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100%;
+		background-position: center;
+	  }
+
+	  .list-text{
+		padding: 5px;
+		text-align: center;
+		height: 200px;
+		background-image: linear-gradient($dark_gray, $light_gray);
+		box-shadow: 3px 4px rgba(70,65,89,.7);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	  }
+
+	  .list-title {
+		display: block;
+		color: rgb(193, 208, 220);
+	  }
+
+	  .list-title:hover{
+		text-decoration: underline;
+		color: rgb(193, 208, 220);
+	  }
+
+	  .list-loc {
+		font-size: 11px;
+		color: #1ABC9C;
+		margin-top: 5px;
+	  }
+	}
+  }
+}
 #contact {
   min-height: 100vh !important;
   background-size: cover;
@@ -265,6 +421,12 @@ section{
 }
 
 @media screen and (min-width:769px){
+  #miniMenu{
+	display: none;
+  }
+  #top-logo{
+	width: 75px;
+  }
   .bg-blob{
 	display: inline-block;
   }
@@ -301,38 +463,48 @@ section{
   .title{
 	font-size: 7em;
   }
-  .blog-articles{
-	flex-direction: row;
-  }
-  .list{
-	width: 33%;
-  }
-  .portfolio{
-	display: flex;
-	justify-content: space-evenly;
+  #blog{
+	.blog-articles{
+	  flex-direction: row;
 
-	.portfolio-item{
+	  .list{
+		width: 33%;
+	  }
+	}
+
+  }
+  #experience{
+	.portfolio{
 	  display: flex;
-	  position: relative;
-	  height: 200px;
-	  width: 200px;
+	  justify-content: space-evenly;
+
+	  .portfolio-item{
+		display: flex;
+		position: relative;
+		height: 200px;
+		width: 200px;
+	  }
+	  .portfolio-box{
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	  }
+	  .portfolio-image-div{
+		z-index: 2;
+	  }
+	  .portfolio-image{
+		height: 200px;
+		width: 200px;
+	  }
 	}
-	.portfolio-box{
-	  position: absolute;
-	  top:0;
-	  left: 0;
-	  right: 0;
-	  bottom: 0;
-	}
-	.portfolio-image-div{
-	  z-index: 2;
-	}
-	.portfolio-image{
-	  height: 200px;
-	  width: 200px;
+	.languages-frameworks{
+	  #thingsUsed {
+		display: block;
+	  }
 	}
   }
-
   #contact{
 	padding: 300px 0 0;
   }
@@ -361,7 +533,7 @@ section{
   }
   .bg7{
 	display: block;
-	left: -50vw;
+	left: -44vw;
 	top: 0px;
   }
   .bg3{
@@ -382,7 +554,7 @@ section{
   }
   .bg8{
 	width: 300px;
-	left: 50%;
+	left: 55%;
 	top: 120%;
   }
   .bg9{
@@ -410,5 +582,10 @@ section{
   footer{
 	height: 300px;
 	margin-top: 80px;
+  }
+}
+@media screen and (min-width:1400px){
+  .bg7{
+	left: -34vw;
   }
 }
