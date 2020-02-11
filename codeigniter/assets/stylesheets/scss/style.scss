@@ -30,8 +30,22 @@ $white: rgb(255,255,223);
   src: url("https://dev.ryanheadley.net/assets/fonts/DIN-Condensed-Bold.ttf") format("opentype");
 }
 
+body{
+  font-family:SpaceMono-Regular;
+  color: rgb(193, 208, 220) !important;
+  background-image: linear-gradient($dark_gray,rgb(130, 122, 159));
+}
 section{
   padding: 100px 0;
+}
+a{
+  color: $light_green !important;
+}
+i{
+  color: $light_green !important;
+}
+.select2-arrow {
+  border-color: #deff8b transparent !important;
 }
 #top-logo{
   position: absolute;
@@ -44,6 +58,53 @@ section{
 .dropdown-toggle::after{
   display: none !important;
 }
+.main-navigation {
+  position: absolute;
+  top: 50px;
+  width: 600px;
+  right: 0;
+  max-width: 100%;
+  margin-right: 10px;
+  text-align: center;
+  z-index: 99;
+
+  ul {
+	align-items: center;
+	width: 600px;
+	margin: 0px;
+	padding: 0px;
+
+	li {
+	  display: inline-block;
+	  list-style-type: none;
+
+	  a {
+		display: inline-flex;
+		padding: 7px;
+		font-family: DIN-Condensed-Bold;
+		text-transform: uppercase;
+		font-size: 16px;
+		text-decoration: none;
+		color: $dark_gray !important;
+
+		span {
+		  margin-left: 7px;
+		}
+	  }
+	}
+  }
+}
+
+#miniMenu {
+  display: none;
+  font-size: 36px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#main-nav{
+  display: none;
+  justify-content: space-between;
+}
 #miniMenu{
   position: absolute;
   right: 15px;
@@ -51,6 +112,9 @@ section{
   display: block;
   color: $white;
   z-index: 99;
+}
+#main-nav-footer{
+  display: none;
 }
 .btn{
   border: 1px solid rgb(193, 208, 220) !important;
@@ -78,7 +142,7 @@ section{
 .logo{
   width: 80px;
   bottom: 0px;
-  left: 100px;
+  left: 10%;
   top: unset;
 }
 .bgw{
@@ -124,6 +188,7 @@ section{
   margin-right: -50vw;
 }
 .bg10{
+  display: block;
   left: -3px;
   width: 101vw;
   height: 100%;
@@ -146,7 +211,29 @@ section{
 .l-gry{
   color: $light_gray;
 }
+.progress-bar-success{
+  background-color: transparent !important;
+  background-image: linear-gradient(to right,$light_green,$dark_green) !important;
+  color: transparent !important;
+}
+.select2-drop .select2-highlighted > .select2-result-label{
+  background-color: $dark_green !important;
+}
+.form-control{
+  font-family: SpaceMono-Regular !important;
+  color: $light_green !important;
+  border-top-color: rgb(73, 78, 82) !important;
+  border-right-color: rgb(73, 78, 82) !important;
+  border-bottom-color: rgb(73, 78, 82) !important;
+  border-left-color: rgb(73, 78, 82) !important;
+  background-color: rgb(37, 38, 39) !important;
+  box-shadow: none !important;
+  border-radius: unset;
 
+  &::placeholder{
+	color: $dark_green !important;
+  }
+}
 .title{
   font-family: DIN-Condensed-Bold;
   color: $dark_gray;
@@ -154,6 +241,12 @@ section{
   font-size: 4em;
   margin: 0;
   text-shadow: -1px -1px 0 rgb(193, 208, 220), 1px -1px 0 rgb(193, 208, 220), -1px 1px 0 rgb(193, 208, 220), 1px 1px 0 rgb(193, 208, 220);
+}
+.above-title{
+  font-family: DIN-Condensed-Bold;
+  font-size: 22px;
+  color: $light_gray;
+  margin-bottom: 10px !important;
 }
 
 .languagesDiv{
@@ -171,50 +264,120 @@ section{
 	width: 20vw;
   }
 }
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
-  .portfolio-item {
-	display: inline-block;
+#travel{
+  .travel-container{
+	order: 1;
+  }
+  .insta-container{
+	order: 2;
+  }
+  .instapic:hover{
+	cursor: pointer;
+  }
+  #instaBtn{
 	position: relative;
-	width: 45%;
-	margin-bottom: 50px;
-  }
+	bottom: 0;
+	left: 0;
+	margin-bottom: 10px;
 
-  .portfolio-image-div {
-	z-index: 2;
+	i{
+	  margin-right: 10px;
+	}
   }
-
-  .portfolio-image {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 150px;
-	width: 150px;
+}
+#qualifications{
+  .qual-text{
+	float: right;
+	padding: 30px 0;
+	max-width: 500px;
   }
-
-  .portfolio-text {
+  .qual-text p{
+	text-align: left;
+	color: rgb(107,186,112);
+  }
+  .section-title{
+	float: right;
+	text-align: left;
+	padding-left:15px;
+  }
+  .degree{
+	color: rgb(222,255,139);
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	float:left;
+  }
+  .year{
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	z-index: 1;
-	padding: 10px;
-	min-height: 50%;
+	text-transform: uppercase;
+	font-family: DIN-Condensed-Bold;
+	color: $light_gray;
+	text-transform: uppercase;
+	float: right;
   }
-
-  .portfolio-loc {
-	font-family: SpaceMono-Regular;
-	text-align: center;
-	color: rgb(107, 186, 112);
-	font-size: 14px;
+  .degree-loc{
+	font-family: DIN-Condensed-Bold;
+	text-transform: uppercase;
+	color: rgb(107,186,112);
+  }
+  .degree-loc i{
+	margin-right: 10px;
+	color: rgb(107,186,112);
+  }
+  .progress{
+	border-radius: 0 !important;
   }
 }
 #experience{
   min-height: 90vh !important;
 
+  .portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.portfolio-item {
+	  display: inline-block;
+	  position: relative;
+	  width: 45%;
+	  margin-bottom: 50px;
+	}
+
+	.portfolio-image-div {
+	  z-index: 2;
+	}
+
+	.portfolio-image {
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 150px;
+	  width: 150px;
+	}
+
+	.portfolio-text {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-end;
+	  align-items: center;
+
+	  z-index: 1;
+	  padding: 10px;
+	  min-height: 50%;
+	}
+
+	.portfolio-loc {
+	  font-family: SpaceMono-Regular;
+	  text-align: center;
+	  color: rgb(107, 186, 112);
+	  font-size: 14px;
+	}
+	.btn{
+	  i{
+		margin-left: 10px;
+	  }
+	}
+  }
   .clickExp {
 	color: $dark_green;
 	margin: 2px;
@@ -248,7 +411,6 @@ section{
 	margin-top: 20px;
 	margin-bottom: 20px;
   }
-
   .experienceImg img {
 	width: 100%;
   }
@@ -273,6 +435,22 @@ section{
 	#thingsUsed{
 	  display: none;
 	}
+  }
+  #virtualLanguages {
+	display: inline-block;
+	float: left;
+	font-family: DIN-Condensed-Bold;
+	max-width: 150px;
+	margin-right: 40px;
+	color: $light_green;
+  }
+  #frameworks {
+	display: block;
+	float: left;
+	clear: right;
+	max-width: 150px;
+	font-family: DIN-Condensed-Bold;
+	color: $light_green;
   }
 
 
@@ -306,8 +484,10 @@ section{
 		padding: 5px;
 		text-align: center;
 		height: 200px;
+		font-family: SpaceMono-Regular;
+		font-size: 14px;
 		background-image: linear-gradient($dark_gray, $light_gray);
-		box-shadow: 3px 4px rgba(70,65,89,.7);
+		box-shadow: 3px 4px rgba(70,65,89,.3);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -316,7 +496,9 @@ section{
 
 	  .list-title {
 		display: block;
-		color: rgb(193, 208, 220);
+		font-family: SpaceMono-Regular;
+		font-size: 16px;
+		color: $white !important;
 	  }
 
 	  .list-title:hover{
@@ -325,8 +507,8 @@ section{
 	  }
 
 	  .list-loc {
-		font-size: 11px;
-		color: #1ABC9C;
+		font-size: 14px;
+		color: $dark_green;
 		margin-top: 5px;
 	  }
 	}
@@ -373,7 +555,14 @@ section{
 
 #socialLinks{
   i{
-	color: $white;
+	font-size: 32px;
+	margin: 10px;
+	color: $white !important;
+
+	&:hover{
+	  cursor: pointer;
+	  color: $dark_green !important;
+	}
   }
 }
 
@@ -382,7 +571,7 @@ section{
  */
 
 @media screen and (max-width:480px){
-  #instaFeed > div:nth-child(n+6){
+  #instaFeed > div:nth-child(n+7){
 	display: none;
   }
   #menu{
@@ -424,6 +613,10 @@ section{
   #miniMenu{
 	display: none;
   }
+  #main-nav-footer{
+	display: block;
+	top: 0px;
+  }
   #top-logo{
 	width: 75px;
   }
@@ -458,7 +651,8 @@ section{
 	min-width: 500px;
   }
   #thingsUsed{
-	padding: 60px 80px;
+	padding: 60px 140px;
+	width: 500px;
   }
   .title{
 	font-size: 7em;
@@ -472,6 +666,18 @@ section{
 	  }
 	}
 
+  }
+  #travel{
+	.travel-container{
+	  order: 2;
+	}
+	.insta-container{
+	  order: 1;
+	}
+	#instaBtn {
+	  position: absolute;
+	  left:15px;
+	}
   }
   #experience{
 	.portfolio{
@@ -490,6 +696,9 @@ section{
 		left: 0;
 		right: 0;
 		bottom: 0;
+	  }
+	  .portfolio-text{
+		background-color: $dark_gray;
 	  }
 	  .portfolio-image-div{
 		z-index: 2;
