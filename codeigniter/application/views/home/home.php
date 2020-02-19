@@ -36,8 +36,7 @@
 		<link rel=stylesheet href="<?= base_url('assets/stylesheets/style.css')?>">
 
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/scripts/map-icons-master/dist/css/map-icons.css')?>">
-
-
+		
         <!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -48,16 +47,14 @@
         <!-- Scripts -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="<?= base_url('assets/dist/js/flat-ui.js')?>"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsQaXloxPg8Os1RrHQSQa1HimaE57hkPQ"></script>
 		<script type="text/javascript" src="<?= base_url('assets/scripts/map-icons-master/dist/js/map-icons.js')?>"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
 
 		<script src="<?= base_url('assets/scripts/home.js')?>"></script>
-<!--		<script src="--><?//= base_url('assets/scripts/markerclustererplus/src/markerclusterer.js')?><!--"></script>-->
+		<script src="<?= base_url('assets/scripts/markerclusterer.js')?>"></script>
 
     </head>
 
@@ -112,7 +109,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#testimonials">
+                            <a href="#experience">
                                 <span id="tesMenuText">Portfolio</span>
                             </a>
                         </li>
@@ -168,27 +165,15 @@
 						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 travel-container">
 							<img src="<?= base_url('assets/images/illustration_world.png') ?>" class="bg-blob bgw">
 							<p class="above-title">THROUGH THE WORLD</p>
-							<h2 class="title">Travel</h2>
+							<h2 id="travelTitle" class="title">Travel</h2>
 							<p id="travelText">I started out as a traveler discovering the world, and I've now become a <span class="l-grn">digital nomad</span>! Since I'm always on the move, this section let's you know where I am and what I've been up to.</p>
 							<button id="instaBtn" class="btn"><a href="https://www.instagram.com/iry47/"><i class="fas fa-caret-left"></i> INSTAGRAM</a></button>
 						</div>
 						<div id="mapDiv" class="col-xs-12 col-sm-12 order-3">
 							<div id="mapWindow">
 								<div id="map"></div>
-								<div id="filter">
-									<!--                                <div id="filterButton">-->
-									<!--                                    <i class="fas fa-filter"></i><span>Filters</span>-->
-									<!--								</div>-->
-									<div class="checkFilter">
-										<div id="closeFilter"><span>Select Filters</span><i id="filterChevron" class="fas fa-caret-down"></i></div>
-										<label class="checkbox" id="foodCheck">Food</label>
-										<label class="checkbox" id="accCheck">Accomodation</label>
-										<label class="checkbox" id="parkCheck">Park / Beach</label>
-										<label class="checkbox" id="barCheck">Bars</label>
-										<label class="checkbox" id="eyeCheck">Sightseeing</label>
-										<label class="checkbox" id="actCheck">Activities</label>
-									</div>
-								</div>
+								<img src="<?= base_url('assets/images/geo_altitude.png') ?>" class="bg-blob bga">
+
 								<script type="text/javascript">
 									bounds = new google.maps.LatLngBounds();
 
@@ -339,10 +324,10 @@
 
 											bounds.extend(loc);
 										}
-										// markerCluster = new MarkerClusterer(map, markers, {
-										// 	imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
-										// 	//gridSize: 5,
-										// });
+										markerCluster = new MarkerClusterer(map, markers, {
+											imagePath: '<?= base_url('/assets/images/m') ?>',
+											gridSize: 40,
+										});
 
 										$('.custom-checkbox').each(function(){
 											filters[''+$(this).id+''] = false;
@@ -464,7 +449,7 @@
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 									<div class="qual-text">
-										<p>I graduated with a general <span class="l-grn">computer science</span> degree and gained a wide array of experience in different languages and frameworks - from command line to object-oriented programing and from data structures to functional programming: my studies were the foundation of my computer science knowledge.</p>
+										<p id="qualInfo">I graduated with a general <span class="l-grn">computer science</span> degree and gained a wide array of experience in different languages and frameworks - from command line to object-oriented programing and from data structures to functional programming: my studies were the foundation of my computer science knowledge.</p>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
