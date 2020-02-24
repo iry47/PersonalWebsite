@@ -38,7 +38,8 @@
         <link rel="stylesheet" type="text/css" href="<?= base_url('assets/scripts/map-icons-master/dist/css/map-icons.css')?>">
 		
         <!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
         <!-- FontAwesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -47,7 +48,7 @@
         <!-- Scripts -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 		<script src="<?= base_url('assets/dist/js/flat-ui.js')?>"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsQaXloxPg8Os1RrHQSQa1HimaE57hkPQ"></script>
 		<script type="text/javascript" src="<?= base_url('assets/scripts/map-icons-master/dist/js/map-icons.js')?>"></script>
@@ -244,7 +245,7 @@
 												break;
 											default:
 												$markerHtml = '<i class="map-icon map-icon-crosshairs"></i>';
-												$markerColor = '#1ABC9C';
+												$markerColor = 'rgb(107,186,112)';
 												$filter = 'none';
 										}
 										if(isset($marker->properties->Published)){$start = date_create_from_format('Y-m-d H:i:s', $marker->properties->Published);}
@@ -273,7 +274,7 @@
 
 										var myLatlng = new google.maps.LatLng(48.864716, 2.349014);
 										var mapOptions = {
-											zoom: 2,
+											zoom: 3,
 											center: myLatlng,
 											disableDefaultUI: false
 										}
@@ -288,6 +289,35 @@
 										};
 
 										cmarkers();
+
+										//my current location
+										let i = locations.length;
+										var marker = new mapIcons.Marker({
+											map: map,
+											position: new google.maps.LatLng(48.864716, 2.349014),
+											icon: {
+												path: mapIcons.shapes.MAP_PIN,
+												fillColor: '#E74C3C',
+												scale: 0.5,
+												fillOpacity: 1,
+												strokeColor: '',
+												strokeWeight: 0
+											},
+											map_icon_label: '<i class="map-icon fas fa-child"></i>',
+
+										});
+
+										var infowindow = new google.maps.InfoWindow();
+										loc = new google.maps.LatLng(48.864716, 2.349014);
+
+										google.maps.event.addListener(marker, 'click', (function (marker, i) {
+											return function () {
+												infowindow.setContent('This is where I currently live! \n If you\'re around or planning on coming, then let me know');
+												infowindow.open(map, marker);
+											}
+										})(marker, i));
+
+										bounds.extend(loc);
 									}
 
 									function cmarkers(){
@@ -299,10 +329,10 @@
 												position: new google.maps.LatLng(locations[i][3], locations[i][4]),
 												icon: {
 													path: mapIcons.shapes.MAP_PIN,
-													fillColor: locations[i][7],
+													fillColor: '#F4B400',
 													scale: 0.5,
 													fillOpacity: 1,
-													strokeColor: '',
+													strokeColor: 'rgb(107,186,112)',
 													strokeWeight: 0
 												},
 												map_icon_label: locations[i][6],
@@ -783,7 +813,12 @@
 					var modal ='<div class="modal" id="pic'+i+'" tabindex="-1" role="dialog" aria-hidden="true">' +
 						'  <div class="modal-dialog modal-dialog-centered">' +
 						'    <div class="modal-content">' +
+						' 	 <div class="modal-header">' +
+						'        <button type="button" class="close" data-dismiss="modal">&times;</button>' +
+						'      </div>' +
+						'    <div class="modal-body">' +
 						'		<img src="'+data.data[i].images.standard_resolution.url+'"/>'+
+						'	</div>' +
 						'	</div>' +
 						'</div>' +
 						'</div>';
