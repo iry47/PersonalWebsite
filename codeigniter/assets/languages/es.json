@@ -1,5 +1,6 @@
 {
     "about" : "Informacíon",
+  	"travelTitle" : "Viaje",
     "qualifications" : "Calificaciones",
     "experience" : "Experiencia",
     "contact" : "Contacto",
@@ -20,6 +21,7 @@
     "english" : "Inglés",
     "french" : "Francés",
     "spanish" : "Español",
+  	"portuguese" : "Portugues",
     "dutch" : "Holandés",
     "experienceTitle" : "Experiencia",
     "hover4info" : "Toca cada una para más informacíon",
@@ -32,6 +34,6 @@
     "fdInfo": "Esta página web, que escribí yo completamente, es una introdución censilla en mis abilidades y también para mostrar mi experiencia.",
     "wgInfo": "Durante esta experiencia, mi tarea principal fue de convertir el sistema de informe usando el Framework ASP.NET Web Form en una aplicación ASP.NET MVC. Elaboré una solución servidor/cliente y usé Telerik Kendo UI.",
     "tmxInfo" : "Durante esta experiencia, trabajé en el equipo ocupandose del nuevo software de analisis de riesgo. Mis tareas iban de la programación de una aplicación web hasta la documentación pasando por un Web service RESTful. Esta experiencia me ha permitido de acumular mucha experiencia en diferentes idiomas: C#, HTML5, Javascript, CSS, MySQL and Powershell.",
-    "studyInfo" : "Tengo un diploma en informática y acumulé mucha experiencia en diferentes idiomas y Frameworks, desde la linéa de comanda hasta la programación orientado a objetos pasando por las estructuras de datos y la programación funcional: Mis estudios fueron la fundación de mis conocimientos en informatica.",
+    "qualInfo" : "Tengo un diploma en informática y acumulé mucha experiencia en diferentes idiomas y Frameworks, desde la linéa de comanda hasta la programación orientado a objetos pasando por las estructuras de datos y la programación funcional: Mis estudios fueron la fundación de mis conocimientos en informatica.",
     "contactText" : "Sea que busque un desarollador, sea que quiera tomar una bebida o cualquier cosa entre las dos - este es el lugar para ponerse en contacto. Me gustaría recibir su mensaje!"
 }

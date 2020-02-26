@@ -1,1 +1,14 @@
-<div style="max-width:450px;"><div style="width:100px;height:100px;float:left;display:inline-block;margin-right:10px;"><div style="background-image: url(<?= base_url("www/assets/images/".str_replace("'", "\'",$marker->image.""))?>);background-size:100% 100%;background-repeat:no-repeat;height:100%;"></div></div>'+'<div class="iw-info" style="float:left;display:inline-block;max-width:70%;">'+"<h5 id='iw-title' style='margin-top:0px;font-size:20px;'><?= $marker->place?></h5>"+'<?php if(isset($marker->start_date) or isset($marker->end_date){?><p style="margin:5px;font-size:12px;"><?php if(isset($marker->start_date){echo "".$marker->start_date."-".$marker->end_date."";}else{echo $marker->end_date;}?></p> <?php } if(isset($marker->site)){ ?><p style="margin:5px;text-align:left;font-size:12px;"><?= $marker->site?></p><?php }?><p style="margin-bottom:0px;font-size:16px;"><?= str_replace("'", "\'",$marker->description)?></p>'+'</div></div>
+<div id="filter">
+	<!--                                <div id="filterButton">-->
+	<!--                                    <i class="fas fa-filter"></i><span>Filters</span>-->
+	<!--								</div>-->
+	<div class="checkFilter">
+		<div id="closeFilter"><span>Select Filters</span><i id="filterChevron" class="fas fa-caret-down"></i></div>
+		<label class="checkbox" id="foodCheck">Food</label>
+		<label class="checkbox" id="accCheck">Accomodation</label>
+		<label class="checkbox" id="parkCheck">Park / Beach</label>
+		<label class="checkbox" id="barCheck">Bars</label>
+		<label class="checkbox" id="eyeCheck">Sightseeing</label>
+		<label class="checkbox" id="actCheck">Activities</label>
+	</div>
+</div>

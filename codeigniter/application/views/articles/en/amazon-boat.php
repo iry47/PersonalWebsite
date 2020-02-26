@@ -8,7 +8,19 @@
     <meta name="description" content="Find everything you need to know about taking a boat in the Amazon betwen Belem, Manaus and Leticia/Tabatinga.">
     
     <!-- Fav Icon -->
-        <link rel="icon" href="<?= base_url('assets/images/favicon.ico')?>">
+	<link rel="apple-touch-icon" sizes="57x57" href="<?= base_url('assets/images/favicon/apple-icon-57x57.png') ?>">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?= base_url('assets/images/favicon//apple-icon-60x60.png') ?>">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?= base_url('assets/images/favicon//apple-icon-72x72.png') ?>">
+	<link rel="icon" type="image/png" sizes="36x36"  href="<?= base_url('assets/images/favicon//android-icon-36x36.png') ?>">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/images/favicon/favicon-32x32.png') ?>">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?= base_url('assets/images/favicon/favicon-96x96.png') ?>">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/images/favicon/favicon-16x16.png') ?>">
+	<link rel="icon" href="<?= base_url('assets/images/favicon/favicon.ico') ?>" type="image/x-icon" />
+	<link rel="manifest" href="<?= base_url('assets/images/favicon//manifest.json') ?>">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="<?= base_url('assets/images/favicon/ms-icon-144x144.png') ?>">
+	<meta name="theme-color" content="#ffffff">
+
         <!-- Stylesheets -->
         <link rel=stylesheet href="<?= base_url('assets/stylesheets/articles.css')?>">
 
@@ -30,7 +42,7 @@
     <script id="dsq-count-scr" src="//ryanheadley-net.disqus.com/count.js" async></script>
 </head>
 <body>
-    <div class="cover-photo" style="background-image: url('<?= base_url("assets/images/amazon-river-cruise.jpg")?>')">
+    <div class="cover-photo" style="background-image: url('<?= base_url("assets/images/amazon_river_cruise.jpeg")?>')">
     <div class="article-title">
     <h1>Travel through the Amazon by boat</h1></div>
     </div>

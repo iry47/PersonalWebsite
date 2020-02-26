@@ -1,5 +1,6 @@
 {
     "about" : "About",
+  	"travelTitle" : "Travel",
     "qualifications" : "Qualifications",
     "experience" : "Experience",
     "contact" : "Contact",
@@ -20,10 +21,11 @@
     "english" : "English",
     "french" : "French",
     "spanish" : "Spanish",
+  	"portuguese" : "Portuguese",
     "dutch" : "Dutch",
     "experienceTitle" : "Experience",
     "hover4info" : "Hover for more information",
-    "skRole" : "Front End Developer - Spire Konto",
+    "skRole" : "KIDWELCOME",
     "frontDevRole" : "Front End Developer - This site!",
     "wgRole" : "Software Developer - The Woodbridge Group",
     "tmxRole" : "Software Developer - TMX Group, Razaor Risk",
@@ -32,7 +34,7 @@
     "fdInfo": "This site started off as a blank page and was entirely written by me. It was designed to be a simple introduction to my coding abilities as well showcasing my experience.",
     "wgInfo": "Converted the existing reporting system from an ASP.NET Web Form application to an ASP.NET MVC application, designed and created a full client and server side reporting site and implemented the Telerik Kendo UI.",
     "tmxInfo" : "I worked with the team put in charge of developing the new risk analysis software. My tasks varied from programming a web application, developping a RESTful web service to documentation. This allowed me to gain valuable experience in several different computing languages: C#, HTML5, Javascript, CSS, MySQL and Powershell.",
-    "studyInfo" : "I graduated with a general computer science degree and gained a wide array of experience in different languages and frameworks - from command line to object-oriented programing and from data structures to functional programming: my studies were the foundation of my computer science knowledge.",
+    "qualInfo" : "I graduated with a general computer science degree and gained a wide array of experience in different languages and frameworks - from command line to object-oriented programing and from data structures to functional programming: my studies were the foundation of my computer science knowledge.",
     "contactText" : "Whether you're looking for a developer, want to meet up for a drink or anything in between - here's the place to get in contact. Looking forward to hearing from you!"
 
 }

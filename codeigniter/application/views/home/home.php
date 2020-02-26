@@ -628,7 +628,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Wordpress, jQuery, APIs</p>
-									<button class="btn"><a href="https://opticaltel.com">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
+									<button class="btn"><a href="http://opticaltel.com">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">

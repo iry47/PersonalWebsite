@@ -43,9 +43,6 @@ p{
 	padding: 100px 0;
 }
 /*about section*/
-#about {
-	padding: 0;
-}
 #aboutText {
     display: inline-block;
     float: left;
@@ -107,6 +104,10 @@ p{
 
 .map-icon-label .map-icon{
     font-size: 12px !important;
+	color: black !important;
+}
+.map-icon-label .fa-child{
+	color: white !important;
 }
 
 /*instagram section*/

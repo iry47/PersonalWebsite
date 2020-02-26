@@ -11,25 +11,29 @@ $white: rgb(255,255,223);
 
 @font-face {
   font-family: "SpaceMono-Bold";
-  src: url("https://dev.ryanheadley.net/assets/fonts/SpaceMono-Bold.ttf") format("opentype");
+  src: url("https://www.ryanheadley.net/assets/fonts/SpaceMono-Bold.ttf") format("opentype");
 }
 @font-face {
   font-family: "SpaceMono-BoldItalic";
-  src: url("https://dev.ryanheadley.net/assets/fonts/SpaceMono-BoldItalic.ttf") format("opentype");
+  src: url("https://www.ryanheadley.net/assets/fonts/SpaceMono-BoldItalic.ttf") format("opentype");
 }
 @font-face {
   font-family: "SpaceMono-Italic";
-  src: url("https://dev.ryanheadley.net/assets/fonts/SpaceMono-Italic.ttf") format("opentype");
+  src: url("https://www.ryanheadley.net/assets/fonts/SpaceMono-Italic.ttf") format("opentype");
 }
 @font-face {
   font-family: "SpaceMono-Regular";
-  src: url("https://dev.ryanheadley.net/assets/fonts/SpaceMono-Regular.ttf") format("opentype");
+  src: url("https://www.ryanheadley.net/assets/fonts/SpaceMono-Regular.ttf") format("opentype");
 }
 @font-face {
   font-family: "DIN-Condensed-Bold";
-  src: url("https://dev.ryanheadley.net/assets/fonts/DIN-Condensed-Bold.ttf") format("opentype");
+  src: url("https://www.ryanheadley.net/assets/fonts/DIN-Condensed-Bold.ttf") format("opentype");
 }
 
+
+html{
+  overflow-x: hidden;
+}
 body{
   font-family:SpaceMono-Regular;
   color: rgb(193, 208, 220) !important;
@@ -94,12 +98,15 @@ i{
 	}
   }
 }
-
 #miniMenu {
   display: none;
   font-size: 36px;
   margin-right: 20px;
   cursor: pointer;
+
+  i{
+	color: $white !important;
+  }
 }
 #main-nav{
   display: none;
@@ -138,6 +145,11 @@ i{
   max-width: 200px;
   right: -50px;
   top: -120px;
+}
+.bga{
+  left: 32vw;
+  bottom: -35%;
+  max-width: 300px;
 }
 .logo{
   width: 80px;
@@ -248,7 +260,6 @@ i{
   color: $light_gray;
   margin-bottom: 10px !important;
 }
-
 .languagesDiv{
   margin-top: 25px;
   width: 100%;
@@ -264,7 +275,29 @@ i{
 	width: 20vw;
   }
 }
-
+.modal-content{
+   background-color: transparent !important;
+}
+.modal-header{
+  border: none !important;
+}
+.modal-body{
+  padding: 0 !important;
+  img{
+	max-width: 100%;
+  }
+}
+.open{
+  .dropdown-menu{
+	display: block !important;
+  }
+}
+.dropdown-item{
+  color: $dark_green !important;
+}
+.close{
+  color: $white !important;
+}
 #travel{
   .travel-container{
 	order: 1;
@@ -345,6 +378,7 @@ i{
 
 	.portfolio-image-div {
 	  z-index: 2;
+	  height: 150px;
 	}
 
 	.portfolio-image {
@@ -396,7 +430,7 @@ i{
 	  flex-direction: column;
 
 	  #thingsUsed{
-		background-image: url(https://dev.ryanheadley.net/assets/images/green_background_6.png);
+		background-image: url(https://www.ryanheadley.net/assets/images/green_background_6.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		width: 100vw;

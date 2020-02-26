@@ -36,6 +36,7 @@ $(document).ready(function () {
         $('#filterButton').show();
         $('.checkFilter').hide();
     });
+
     
     //experience section functionality
     $('#flInfo').hide();
@@ -81,6 +82,7 @@ $(document).ready(function () {
                 $("#expMenuText").text(languages.experience);
                 $("#contactMenuText").text(languages.contact);
                 $("#welcome").text(languages.welcome);
+                $('#travelTitle').text(languages.travelTitle);
                 $("#aboutArticle").text(languages.aboutText);
                 $("#travelText").text(languages.travelText);
                 $("#instaTitle").text(languages.instaTitle); $("#qualificationsTitle").text(languages.qualificationsTitle);
@@ -98,12 +100,9 @@ $(document).ready(function () {
                 $("#french").text(languages.french);
                 $("#spanish").text(languages.spanish);
                 $("#dutch").text(languages.dutch);
+                $("#qualInfo").text(languages.qualInfo);
                 $("#experienceTitle").text(languages.experienceTitle);
                 $("#hover4info").text(languages.hover4info);
-                $("#frontDevRole").text(languages.frontDevRole);
-                $("#wgRole").text(languages.wgRole);
-                $("#tmxRole").text(languages.tmxRole);
-                $("#studyRole").text(languages.studyRole);
                 $("#contactText").text(languages.contactText);
                 $("#welcome").show();
             }
@@ -341,10 +340,11 @@ $(document).ready(function () {
     }
 
     //portfolio hover
-	$('.portfolio-image-div').hover(function(){
-		$(this).css({top:"-150px"});
-	}, function(){
-		$(this).css({top:"0px"});
+	$('.portfolio-item').mouseover(function(){
+		$(this).find('.portfolio-image-div').css({top:"-150px"});
+	});
+	$('.portfolio-item').mouseout(function(){
+		$(this).find('.portfolio-image-div').css({top:"0px"});
 	});
 
     //contact icons
@@ -367,7 +367,8 @@ $(document).ready(function () {
         event.preventDefault();
         window.open('https://instagram.com/iRy47');
     });
-    
+
+
 
 });
 
