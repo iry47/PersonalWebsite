@@ -10,12 +10,12 @@
 
             gtag('config', 'UA-123905614-1');
         </script>
-
+		<meta name="author" content="Ryan Headley">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ryan Headley's Personal Site</title>
-        <meta name="description" content="Ryan Headley's website - find out where I am, what I'm doing and how to connect with me.">
+        <meta name="description" content="Find out where I am, what I'm doing, and how to connect with me.">
 
         <!-- Fav Icon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="<?= base_url('assets/images/favicon/apple-icon-57x57.png') ?>">
@@ -67,22 +67,22 @@
 					<i class="dropdown-toggle fa fa-bars" data-toggle="dropdown"></i>
 					<div class="dropdown-menu dropdown-menu-right" role="menu">
 						<a href="#about" class="dropdown-item">
-							<span id="aboutMenuText">About</span>
+							<span class="aboutMenuText">About</span>
 						</a>
 						<a href="#travel" class="dropdown-item">
-							<span id="travelMenuText">Travel</span>
+							<span class="travelMenuText">Travel</span>
 						</a>
 						<a href="#qualifications" class="dropdown-item">
-							<span id="qualMenuText">Qualifications</span>
+							<span class="qualMenuText">Qualifications</span>
 						</a>
 						<a href="#experience" class="dropdown-item">
-							<span id="expMenuText">Experience</span>
+							<span class="expMenuText">Experience</span>
 						</a>
 						<a href="#experience" class="dropdown-item">
-							<span id="tesMenuText">Portfolio</span>
+							<span class="tesMenuText">Portfolio</span>
 						</a>
 						<a href="#contact" class="dropdown-item">
-							<span id="contactMenuText">Contact</span>
+							<span class="contactMenuText">Contact</span>
 						</a>
 					</div>
 				</div>
@@ -91,32 +91,32 @@
                     <ul>
                         <li>
                             <a href="#about">
-                                <span id="aboutMenuText">About</span> 
+                                <span class="aboutMenuText">About</span>
                             </a>
                         </li>
                         <li>
                             <a href="#travel">
-                                <span id="travelMenuText">Travel</span> 
+                                <span class="travelMenuText">Travel</span>
                             </a>
                         </li>
                         <li>
                             <a href="#qualifications">
-                                <span id="qualMenuText">Qualifications</span>
+                                <span class="qualMenuText">Qualifications</span>
                             </a>
                         </li>
                         <li>
                             <a href="#experience">
-                                <span id="expMenuText">Experience</span>
+                                <span class="expMenuText">Experience</span>
                             </a>
                         </li>
                         <li>
                             <a href="#experience">
-                                <span id="tesMenuText">Portfolio</span>
+                                <span class="tesMenuText">Portfolio</span>
                             </a>
                         </li>
                         <li>
                             <a href="#contact">
-                                <span id="contactMenuText">Contact</span>
+                                <span class="contactMenuText">Contact</span>
                             </a>
                         </li>
                     </ul>
@@ -132,7 +132,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div id="aboutText">
-								<p class="above-title">ABOUT ME</p>
+								<p id="aboutSubTitle" class="above-title">ABOUT ME</p>
 								<h1 id="welcome" class="title">Welcome!</h1>
 								<p id="aboutArticle">My name is Ryan. I'm a <span class="l-grn">computer programer</span>, language enthuisiast and avid traveller. Currently, but not limited to, working as a front end web developer - this site is probably your introduction to my work. My portfolio is growing rapidly and I'd love to include you in it!</p>
 								<div id="languageSelect">
@@ -165,7 +165,7 @@
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 travel-container">
 							<img src="<?= base_url('assets/images/illustration_world.png') ?>" class="bg-blob bgw">
-							<p class="above-title">THROUGH THE WORLD</p>
+							<p id="travelSubTitle" class="above-title">THROUGH THE WORLD</p>
 							<h2 id="travelTitle" class="title">Travel</h2>
 							<p id="travelText">I started out as a traveler discovering the world, and I've now become a <span class="l-grn">digital nomad</span>! Since I'm always on the move, this section let's you know where I am and what I've been up to.</p>
 							<button id="instaBtn" class="btn"><a href="https://www.instagram.com/iry47/"><i class="fas fa-caret-left"></i> INSTAGRAM</a></button>
@@ -272,7 +272,7 @@
 
 									function initMap() {
 
-										var myLatlng = new google.maps.LatLng(48.864716, 2.349014);
+										var myLatlng = new google.maps.LatLng(41.3887900, 2.1589900);
 										var mapOptions = {
 											zoom: 3,
 											center: myLatlng,
@@ -294,7 +294,7 @@
 										let i = locations.length;
 										var marker = new mapIcons.Marker({
 											map: map,
-											position: new google.maps.LatLng(48.864716, 2.349014),
+											position: new google.maps.LatLng(41.3887900, 2.1589900),
 											icon: {
 												path: mapIcons.shapes.MAP_PIN,
 												fillColor: '#E74C3C',
@@ -308,7 +308,7 @@
 										});
 
 										var infowindow = new google.maps.InfoWindow();
-										loc = new google.maps.LatLng(48.864716, 2.349014);
+										loc = new google.maps.LatLng(41.3887900, 2.1589900);
 
 										google.maps.event.addListener(marker, 'click', (function (marker, i) {
 											return function () {
@@ -408,7 +408,7 @@
 			</section>
 
 			<section id="blog" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<p class="above-title">RYANHEADLEY.NET</p>
+				<p class="above-title pl-1">RYANHEADLEY.NET</p>
 				<h2 class="title">BLOG</h2>
                     <div id="blogDiv">
 						<img src="<?= base_url('assets/images/green_background_3.png') ?>" class="bg-blob bg3">
@@ -421,9 +421,9 @@
                                     <div class="list-image" style="background-image: url(<?= base_url("assets/images/amazon_river_cruise.jpeg")?>);"></div>
                                 </div>
                                 <div class="list-text">
-                                    <a class="list-title" href="<?= base_url("/index.php/home/articles/en/amazon-boat.php#disqus_thread")?>"><span>The Amazon by boat</span></a>
+                                    <a id="blog1Title" class="list-title" href="<?= base_url("/index.php/home/articles/en/amazon-boat.php#disqus_thread")?>"><span>The Amazon by boat</span></a>
                                     <p class="list-loc"><i class="fas fa-map-marker-alt"></i> Amazonas, Brasil</p>
-									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/amazon-boat.php#disqus_thread")?>">READ</a></button>
+									<button class="btn "><a href="<?= base_url("/index.php/home/articles/en/amazon-boat.php#disqus_thread")?>"><span class="blogButton">READ</span></a></button>
                                 </div>
                             </div>
                             <div class="list">
@@ -431,9 +431,9 @@
                                     <div class="list-image" style="background-image: url(<?= base_url("assets/images/champagny-crew.jpg")?>);"></div>
                                 </div>
                                 <div class="list-text">
-                                    <a class="list-title" href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>"><span>Getting a ski season job</span></a>
+                                    <a id="blog2Title" class="list-title" href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>"><span>Getting a ski season job</span></a>
                                     <p class="list-loc"><i class="fas fa-map-marker-alt"></i> Champagny en Vanoise, France</p>
-									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>">READ</a></button>
+									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/ski-season.php#disqus_thread")?>"><span class="blogButton">READ</span></a></button>
                                 </div>
                             </div>
                             <div class="list">
@@ -441,9 +441,9 @@
                                     <div class="list-image" style="background-image: url(<?= base_url("assets/images/banana-group.jpg")?>);"></div>
                                 </div>
                                 <div class="list-text">
-                                    <a class="list-title" href="<?= base_url("/index.php/home/articles/en/hostels.php#disqus_thread")?>"><span>Staying in Hostels</span></a>
+                                    <a id="blog3Title" class="list-title" href="<?= base_url("/index.php/home/articles/en/hostels.php#disqus_thread")?>"><span>Staying in Hostels</span></a>
                                     <p class="list-loc"><i class="fas fa-map-marker-alt"></i> The World</p>
-									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/hostels.php#disqus_thread")?>">READ</a></button>
+									<button class="btn"><a href="<?= base_url("/index.php/home/articles/en/hostels.php#disqus_thread")?>"><span class="blogButton">READ</span></a></button>
                                 </div>
                             </div>
                         </div>
@@ -468,8 +468,8 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="section-title">
-								<p class="above-title">DEGREES & LANGUAGES</p>
-								<h2 class="title">QUALIFICATIONS</h2>
+								<p id="qualSubTitle" class="above-title pl-1">DEGREES & LANGUAGES</p>
+								<h2 id="qualificationsTitle" class="title">QUALIFICATIONS</h2>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -490,7 +490,7 @@
 													<p class="year">2014-2015</p>
 												</div>
 												<div class="col-xs-9 col-sm-9 col-md-6 col-lg-7">
-													<p class="degree">Bachelor's in computer science</p>
+													<p id="compSciDes" class="degree">Bachelor's in computer science</p>
 												</div>
 											</div>
 										</div>
@@ -507,7 +507,7 @@
 													<p class="year">2010-2014</p>
 												</div>
 												<div class="col-xs-9 col-sm-9 col-md-6 col-lg-7">
-													<p class="degree">Bachelor's in mechanical engineering</p>
+													<p id="mecDes" class="degree">Bachelor's in mechanical engineering</p>
 												</div>
 											</div>
 										</div>
@@ -555,10 +555,11 @@
             <section id="experience" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<p class="above-title">PORTFOLIO</p>
+						<p class="above-title pl-1">PORTFOLIO</p>
 						<h2 class="title">EXPERIENCE</h2>
 						<div id="hoverDiv">
-							<small id="hover4Info">Hover over each for more information!</small>
+							<button id="cvBtn" class="btn"><a href="#" data-target="#cvEn" data-toggle="modal"><i class="fa fa-address-card"></i> <span id="cv"> My  CV</span></a></button>
+							<small id="hover4Info">Hover over or click each for more information!</small>
 							<figure class="fui-downarrow"></figure>
 						</div>
 					</div>
@@ -569,7 +570,7 @@
 									<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 										<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 positions">
 											<div id="positionsTable">
-												<div id="frontDevRole" class="clickExp">Kidwelcome</div>
+												<div id="kwRole" class="clickExp">Kidwelcome</div>
 												<div id="flRole" class="clickExp">Remote Freelancer</div>
 												<div id="wgRole" class="clickExp">The Woodbridge Group</div>
 												<div id="tmxRole" class="clickExp">TMX Group</div>
@@ -579,8 +580,8 @@
 									<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
 										<div id="moreInfo" class="smallExp">
 											<blockquote>
+												<p id="kwInfo">As the CTO of Kidwelcome, I've created, managed and maintain the entire application as the solo developer.</p>
 												<p id="flInfo">For the past three years I have been a remote freelancer, focusing primarily on front &amp; back end web development.</p>
-												<p id="fdInfo">As the CTO of Kidwelcome, I've created, managed and maintain the entire application as the solo developer.</p>
 												<p id="wgInfo">Converted the existing reporting system from an ASP.NET Web Form application to an ASP.NET MVC application, designed and created a full client and server side reporting site and implemented the Telerik Kendo UI.</p>
 												<p id="tmxInfo">I worked with the team put in charge of developing the new risk analysis software. My tasks varied from programming a web application, developping a RESTful web service to documentation. This allowed me to gain valuable experience in several different computing languages: C#, HTML5, Javascript, CSS, MySQL and Powershell.</p>
 											</blockquote>
@@ -593,7 +594,7 @@
 									<img src="<?= base_url('assets/images/green_background_6.png') ?>" class="bg-blob bg6">
 									<img src="<?= base_url('assets/images/illustration_click.png') ?>" class="bg-blob bgc">
 									<div id="virtualLanguages">
-										<h3>Languages</h3>
+										<h3 id="languagesTitle">Languages</h3>
 										<div class="form-group">
 											<label class="checkbox" id="html5Check">HTML5</label>
 											<label class="checkbox" id="css3Check">CSS3</label>
@@ -624,11 +625,56 @@
 
 							<div class="portfolio-item">
 								<div class="portfolio-box portfolio-image-div">
+									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/KW.png")?>);"></div>
+								</div>
+								<div class="portfolio-box portfolio-text">
+									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, MySQL, APIs</p>
+									<button class="btn"><a href="https://kidwelcome.com"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-box portfolio-image-div">
+									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/iipsa.jpg")?>);"></div>
+								</div>
+								<div class="portfolio-box portfolio-text">
+									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Drupal, jQuery, MySQL</p>
+									<button class="btn "><a href="http://iipsafrica.com"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-box portfolio-image-div">
+									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/corsematin.jpg")?>);"></div>
+								</div>
+								<div class="portfolio-box portfolio-text">
+									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> HTML, CSS, Javascript</p>
+									<button class="btn"><a href="http://corsematin.fr"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-box portfolio-image-div">
 									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/opticaltel.png")?>);"></div>
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Wordpress, jQuery, APIs</p>
-									<button class="btn"><a href="http://opticaltel.com">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
+									<button class="btn"><a href="http://opticaltel.com"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-box portfolio-image-div">
+									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/rndtax.png")?>);"></div>
+								</div>
+								<div class="portfolio-box portfolio-text">
+									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Wordpress, jQuery, APIs</p>
+									<button class="btn"><a href="http://rndtax.co.uk"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
+								</div>
+							</div>
+							<div class="portfolio-item">
+								<div class="portfolio-box portfolio-image-div">
+									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/crypto.jpg")?>);"></div>
+								</div>
+								<div class="portfolio-box portfolio-text">
+									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Wordpress, jQuery, APIs</p>
+									<button class="btn"><a href="http://crypto.farm"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">
@@ -637,7 +683,7 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, CRAFT, jQuery, APIs</p>
-									<button class="btn"><a href="https://lecontactmoderne.com">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
+									<button class="btn"><a href="https://lecontactmoderne.com"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
 								</div>
 							</div>
 							<div class="portfolio-item">
@@ -646,18 +692,10 @@
 								</div>
 								<div class="portfolio-box portfolio-text">
 									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, Craft, jQuery, APIs</p>
-									<button class="btn"><a href="https://viggo.fr">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
+									<button class="btn"><a href="https://viggo.fr"><span class="experienceButton">GO TO WEB</span> <i class="fas fa-caret-up"></i></a></button>
 								</div>
 							</div>
-							<div class="portfolio-item">
-								<div class="portfolio-box portfolio-image-div">
-									<div class="portfolio-image" style="background-image: url(<?= base_url("assets/images/KW.png")?>);"></div>
-								</div>
-								<div class="portfolio-box portfolio-text">
-									<p class="portfolio-loc"><i class="fas fa-laptop-code"></i> PHP, jQuery, APIs</p>
-									<button class="btn"><a href="https://kidwelcome.com">GO TO WEB <i class="fas fa-caret-up"></i></a></button>
-								</div>
-							</div>
+
 							<!--                        <div class="portfolio">-->
 							<!--                                <div class="list-image-div">-->
 							<!--                                    <div class="list-image" ></div>-->
@@ -713,7 +751,7 @@
 <!--                </div>-->
 <!--            </section>-->
 
-            <!-- The Contact section 
+            <!-- The Contact section
 -->
             <section id="contact" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="row">
@@ -721,27 +759,27 @@
 						<div id="contactForm" class="contactForm">
 							<?php echo form_open('home/contact'); ?>
 							<div id="contactName" class="input-group">
-								<input type="text" class="form-control" name="name" placeholder="Name" />
+								<input id="contactFormName" type="text" class="form-control" name="name" placeholder="Name" />
 							</div>
 							<div id="contactEmail" class="input-group">
 								<input type="text" class="form-control" name="email" placeholder="Email" />
 							</div>
 							<div id="contactSubject" class="input-group">
-								<input type="text" class="form-control" name="subject" placeholder="Subject" />
+								<input id="contactFormName" type="text" class="form-control" name="subject" placeholder="Subject" />
 							</div>
-							<div id="contactMsg" class="input-group">                            
+							<div id="contactMsg" class="input-group">
 								<textarea id="msg" type="text" class="form-control" name="message" placeholder="Message"></textarea>
 							</div>
 							<div class="g-recaptcha" data-sitekey="6Ldfmm0UAAAAAC57eggqtRxPK1I70lgrbT36sCwy"></div>
 							<div id="sendBtn">
-								<button class="btn" type="submit">Send Email</button>
+								<button id="contactButton" class="btn" type="submit">Send Email</button>
 							</div>
 							<?= form_close(); ?>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 order-1">
-						<p class="above-title">LET'S MEET</p>
-						<h2 class="title">CONTACT</h2>
+						<p id="contactSubTitle" class="above-title pl-1">LET'S MEET</p>
+						<h2 id="contactTitle" class="title">CONTACT</h2>
 						<div id="contactArticle">
 							<p id="contactText">Whether you're looking for a developer, want to meet up for a drink or anything in between - send me an email. <span class="l-gry">Looking forward to hearing from you!</span></p>
 							<!--                        <a id="emailLink">ryan.headley@me.com</a>-->
@@ -751,6 +789,7 @@
 							<i id="linkedInLink" title="LinkedIn" class="fab fa-linkedin"></i>
 							<i id="twitterLink" title="Twitter" class="fab fa-twitter"></i>
 							<i id="instaLink"   title="Instagram" class="fab fa-instagram"></i>
+							<i id="gitLink"   title="GitHub" class="fab fa-github"></i>
 						</div>
 					</div>
 				</div>
@@ -766,32 +805,32 @@
 				<ul>
 					<li>
 						<a href="#about">
-							<span id="aboutMenuText">About</span>
+							<span class="aboutMenuText">About</span>
 						</a>
 					</li>
 					<li>
 						<a href="#travel">
-							<span id="travelMenuText">Travel</span>
+							<span class="travelMenuText">Travel</span>
 						</a>
 					</li>
 					<li>
 						<a href="#qualifications">
-							<span id="qualMenuText">Qualifications</span>
+							<span class="qualMenuText">Qualifications</span>
 						</a>
 					</li>
 					<li>
 						<a href="#experience">
-							<span id="expMenuText">Experience</span>
+							<span class="expMenuText">Experience</span>
 						</a>
 					</li>
 					<li>
 						<a href="#testimonials">
-							<span id="tesMenuText">Portfolio</span>
+							<span class="tesMenuText">Portfolio</span>
 						</a>
 					</li>
 					<li>
 						<a href="#contact">
-							<span id="contactMenuText">Contact</span>
+							<span class="contactMenuText">Contact</span>
 						</a>
 					</li>
 				</ul>
@@ -799,45 +838,99 @@
 		</div>
 	</footer>
 
+	<div class="modal" id="cvEn" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				 <div id="cvHeader" class="modal-header">
+					 <button id="cvEnBtn" class="btn"><i class="fa fa-exchange"></i> Switch to English</span></a></button>
+					 <button id="cvFrBtn" class="btn"><i class="fa fa-exchange"></i> Traduire à français</span></a></button>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				  </div>
+				<div id="cvEnPhoto" class="modal-body">
+					<img src="<?= base_url('assets/images/cv_en.png') ?>"/>
+				</div>
+				<div id="cvFrPhoto" class="modal-body">
+					<img src="<?= base_url('assets/images/cv_fr.png') ?>"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
     <script type="text/javascript">
         var request = new XMLHttpRequest();
-        request.open('GET', 'https://api.instagram.com/v1/users/self/media/recent/?access_token=243041655.02d2968.62395b7ebe65470ca1b2113e01a26ebf&count=12', true);
+        //request.open('http://api.instagram.com/v1/users/self/media/recent/?access_token=243041655.02d2968.62395b7ebe65470ca1b2113e01a26ebf&count=12', true);
 
-        request.onload = function(container) {
-            if (request.status >= 200 && request.status < 400) {
-                var data = JSON.parse(request.responseText);
-                for (var i=0;i < data.data.length;i++) {
-                    var imgURL = data.data[i].images.thumbnail.url;
-                    //var caption = data.data[i].caption.text;
-                    var div = $('<a href="#" class="instapic" data-target="#pic'+i+'" data-toggle="modal" ></a>');
-					var modal ='<div class="modal" id="pic'+i+'" tabindex="-1" role="dialog" aria-hidden="true">' +
-						'  <div class="modal-dialog modal-dialog-centered">' +
-						'    <div class="modal-content">' +
-						' 	 <div class="modal-header">' +
-						'        <button type="button" class="close" data-dismiss="modal">&times;</button>' +
-						'      </div>' +
-						'    <div class="modal-body">' +
-						'		<img src="'+data.data[i].images.standard_resolution.url+'"/>'+
-						'	</div>' +
-						'	</div>' +
-						'</div>' +
-						'</div>';
-                    $('#instaFeed').append(div);
-					$('#instaFeed').append(modal);
-                    var img = $('<img src="'+imgURL+'"/>');
-                    //var cap = $('<p class="instaCap"><b>iry47</b> '+caption+'</p>');
-                    div.append(img);
-                    //div.append(cap);}
-                }
+		$.getJSON('https://graph.instagram.com/me/media?fields=media_url,caption,thumbnail_url&access_token=IGQVJVTWdwLUVrMndCbnZACdGpIalBZAVmxfU2RFcE45dFlscTl0Sm9COHNVa2lzSmRxUzdlYWNoQUFLRVZAyaUVpbU5tbHdES0tjazJiNk1BTXNvMzZAvUGtzN19DWlMxM3pYSld0c21R',{
+			format: 'json'
+		})
+		.done(function(data){
+			for (var i=0;i < 12;i++) {
+				var imgURL = data.data[i].media_url;
+				var thumbnail = data.data[i].thumbnail_url;
+				var div = $('<a href="#" class="instapic" data-target="#pic'+i+'" data-toggle="modal" ></a>');
+				var modal ='<div class="modal" id="pic'+i+'" tabindex="-1" role="dialog" aria-hidden="true">' +
+					'  <div class="modal-dialog modal-dialog-centered">' +
+					'    <div class="modal-content">' +
+					' 	 <div class="modal-header">' +
+					'        <button type="button" class="close" data-dismiss="modal">&times;</button>' +
+					'      </div>' +
+					'    <div class="modal-body">' +
+					'		<img src="'+data.data[i].media_url+'"/>'+
+					'       <p class="insta-caption">'+data.data[i].caption+'</p>'+
+					'	</div>' +
+					'	</div>' +
+					'</div>' +
+					'</div>';
+				$('#instaFeed').append(div);
+				$('#instaFeed').append(modal);
+				var img;
+				if(typeof(thumbnail) != "undefined"){
+					img = $('<img src="'+thumbnail+'"/>');
+				}else{
+					img = $('<img src="'+imgURL+'"/>');
+				}
 
-                console.log(data);
-            } else {
-            }
-        };
-        request.onerror = function() {
-            // There was a connection error of some sort
-        };
-        request.send();
+				//var cap = $('<p class="instaCap"><b>iry47</b> '+caption+'</p>');
+				div.append(img);
+				//div.append(cap);}
+			}
+		});
+        // request.onload = function(container) {
+        //     if (request.status >= 200 && request.status < 400) {
+        //         var data = JSON.parse(request.responseText);
+        //         for (var i=0;i < data.data.length;i++) {
+        //             var imgURL = data.data[i].images.thumbnail.url;
+        //             //var caption = data.data[i].caption.text;
+        //             var div = $('<a href="#" class="instapic" data-target="#pic'+i+'" data-toggle="modal" ></a>');
+		// 			var modal ='<div class="modal" id="pic'+i+'" tabindex="-1" role="dialog" aria-hidden="true">' +
+		// 				'  <div class="modal-dialog modal-dialog-centered">' +
+		// 				'    <div class="modal-content">' +
+		// 				' 	 <div class="modal-header">' +
+		// 				'        <button type="button" class="close" data-dismiss="modal">&times;</button>' +
+		// 				'      </div>' +
+		// 				'    <div class="modal-body">' +
+		// 				'		<img src="'+data.data[i].images.standard_resolution.url+'"/>'+
+		// 				'	</div>' +
+		// 				'	</div>' +
+		// 				'</div>' +
+		// 				'</div>';
+        //             $('#instaFeed').append(div);
+		// 			$('#instaFeed').append(modal);
+        //             var img = $('<img src="'+imgURL+'"/>');
+        //             //var cap = $('<p class="instaCap"><b>iry47</b> '+caption+'</p>');
+        //             div.append(img);
+        //             //div.append(cap);}
+        //         }
+		//
+        //         console.log(data);
+        //     } else {
+        //     }
+        // };
+        // request.onerror = function() {
+        //     // There was a connection error of some sort
+        // };
+        // request.send();
     </script>
 
 </html>

@@ -40,10 +40,9 @@ $(document).ready(function () {
     
     //experience section functionality
     $('#flInfo').hide();
-    $("#fdInfo").hide();
+    $("#kwInfo").hide();
     $("#wgInfo").hide();
     $("#tmxInfo").hide();
-    $("#studyInfo").hide();
 
     //set correct language
     var languages; 
@@ -76,33 +75,49 @@ $(document).ready(function () {
             url:  'https://www.ryanheadley.net/assets/languages/' + selectedLang + '.json',
             dataType: 'json', 
             success: function populatePage(languages) {
-                $("#aboutMenuText").text(languages.about);
-                $('travelMenuText').text(languages.travel);
-                $("#qualMenuText").text(languages.qualifications);
-                $("#expMenuText").text(languages.experience);
-                $("#contactMenuText").text(languages.contact);
-                $("#welcome").text(languages.welcome);
-                $('#travelTitle').text(languages.travelTitle);
-                $("#aboutArticle").text(languages.aboutText);
-                $("#travelText").text(languages.travelText);
-                $("#instaTitle").text(languages.instaTitle); $("#qualificationsTitle").text(languages.qualificationsTitle);
-                $('#selectEnglish').text(languages.selectEnglish);
-                $('#selectFrench').text(languages.selectFrench);
-                $('#selectSpanish').text(languages.selectSpanish);
-                $("#degrees").text(languages.degrees);
-                $("#compSci").text(languages.compSci);
-                $("#compSciDes").text(languages.compSciDes);
-                $("#mec").text(languages.mec);
-                $("#mecDes").text(languages.mecDes);
-                $("#chooseLang").text(languages.chooseLang);
-                $("#languagesTitle").text(languages.languagesTitle);
-                $("#english").text(languages.english);
-                $("#french").text(languages.french);
-                $("#spanish").text(languages.spanish);
-                $("#dutch").text(languages.dutch);
-                $("#qualInfo").text(languages.qualInfo);
-                $("#experienceTitle").text(languages.experienceTitle);
-                $("#hover4info").text(languages.hover4info);
+				$("#aboutSubTitle").text(languages.aboutSubTitle);
+            	$(".aboutMenuText").text(languages.about);
+				$("#welcome").text(languages.welcome);
+				$("#aboutArticle").text(languages.aboutArticle);
+				$('#selectEnglish').text(languages.selectEnglish);
+				$('#selectFrench').text(languages.selectFrench);
+				$('#selectSpanish').text(languages.selectSpanish);
+				$('#travelSubTitle').text(languages.travelSubTitle);
+				$('#travelTitle').text(languages.travelTitle);
+				$('.travelMenuText').text(languages.travelTitle);
+				$("#travelText").text(languages.travelText);
+				$("#blog1Title").text(languages.blog1Title);
+				$("#blog2Title").text(languages.blog2Title);
+				$("#blog3Title").text(languages.blog3Title);
+				$('.blogButton').text(languages.blogButton);
+				$("#qualSubTitle").text(languages.qualSubTitle);
+				$("#qualificationsTitle").text(languages.qualificationsTitle);
+				$(".qualMenuText").text(languages.qualificationsTitle);
+				$("#qualInfo").text(languages.qualInfo);
+				$("#compSciDes").text(languages.compSciDes);
+				$("#mecDes").text(languages.mecDes);
+				$("#english").text(languages.english);
+				$("#french").text(languages.french);
+				$("#spanish").text(languages.spanish);
+				$("#portuguese").text(languages.portuguese);
+				$("#languagesTitle").text(languages.languagesTitle);
+				$("#experienceTitle").text(languages.experienceTitle);
+				$("#cv").text(languages.cvBtn);
+				$(".expMenuText").text(languages.experienceTitle);
+				$(".tesMenuText").text(languages.tesMenuText);
+				$(".experienceButton").text(languages.experienceButton);
+				$("#hover4Info").text(languages.hover4Info);
+				$("#kwInfo").text(languages.kwInfo);
+				$("#flInfo").text(languages.flInfo);
+				$("#wgInfo").text(languages.wgInfo);
+				$("#tmxInfo").text(languages.tmxInfo);
+				$(".contactMenuText").text(languages.contactTitle);
+				$("#contactTitle").text(languages.contactTitle);
+				$("#contactSubTitle").text(languages.contactSubTitle);
+				$("#contactButton").text(languages.contactButton);
+				$("#contactFormName").text(languages.contactFormName);
+				$("#contactFormSubject").text(languages.contactFormSubject);
+				$("#contactFormMessage").text(languages.contactFormMessage);
                 $("#contactText").text(languages.contactText);
                 $("#welcome").show();
             }
@@ -120,9 +135,9 @@ $(document).ready(function () {
 
     function activateExp(exp){
                 switch(exp){
-                    case "flRole":
-                        $("#flRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
-                        $('#flInfo').show();
+                    case "kwRole":
+                        $("#kwRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
+                        $('#kwInfo').show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
                         $('#css3Check').css('color','rgb(70, 65, 89)');
@@ -134,9 +149,9 @@ $(document).ready(function () {
                         $('#bootCheck').css('color','rgb(70, 65, 89)');
                         $('#ajaxCheck').css('color','rgb(70, 65, 89)');
                         break;
-                    case "frontDevRole":
-                        $("#frontDevRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
-                        $('#fdInfo').show();
+                    case "flRole":
+                        $("#flRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
+                        $('#flInfo').show();
                         $('#moreInfo').show();
                         $('#html5Check').css('color','rgb(70, 65, 89)');
                         $('#css3Check').css('color','rgb(70, 65, 89)');
@@ -168,19 +183,6 @@ $(document).ready(function () {
                         $('#sqlCheck').css('color','rgb(70, 65, 89)');
                         $('#cSharpCheck').css('color','rgb(70, 65, 89)');
                         break;
-                    case "studyRole":
-                        $("#studyRole").css({'color':'rgb(222,255,139)', 'border-bottom':'4px solid rgb(222,255,139)','padding':'0 150px 0 0'});
-                        $("#studyInfo").show();
-                        $('#moreInfo').show();
-                        $('#html5Check').css('color','rgb(70, 65, 89)');
-                        $('#css3Check').css('color','rgb(70, 65, 89)');
-                        $('#jsCheck').css('color','rgb(70, 65, 89)');
-                        $('#angularCheck').css('color','rgb(70, 65, 89)');
-                        $('#pythonCheck').css('color','rgb(70, 65, 89)');
-                        $('#sqlCheck').css('color','rgb(70, 65, 89)');
-                        $('#phpCheck').css('color','rgb(70, 65, 89)');
-                        $('#jqueryCheck').css('color','rgb(70, 65, 89)');
-                        break;
 
                 }
                 $('#thingsUsed').show();
@@ -202,9 +204,9 @@ $(document).ready(function () {
                          $('#bootCheck').css('color','rgb(108, 123, 149)');
                          $('#ajaxCheck').css('color','rgb(108, 123, 149)');
                         break;
-                    case "frontDevRole":
-                         $("#frontDevRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
-                        $('#fdInfo').hide();
+                    case "kwRole":
+                         $("#kwRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
+                        $('#kwInfo').hide();
                          $('#moreInfo').hide();
                         $('#html5Check').css('color','rgb(108, 123, 149)');
                         $('#css3Check').css('color','rgb(108, 123, 149)');
@@ -236,19 +238,6 @@ $(document).ready(function () {
                         $('#sqlCheck').css('color','rgb(108, 123, 149)');
                         $('#cSharpCheck').css('color','rgb(108, 123, 149)');
                         break;
-                    case "studyRole":
-                         $("#studyRole").css({'color':'rgb(107,186,112)', 'border-bottom':'none','padding':'0'});
-                        $("#studyInfo").hide();
-                         $('#moreInfo').hide();
-                        $('#html5Check').css('color','rgb(108, 123, 149)');
-                        $('#css3Check').css('color','rgb(108, 123, 149)');
-                        $('#jsCheck').css('color','rgb(108, 123, 149)');
-                        $('#angularCheck').css('color','rgb(108, 123, 149)');
-                        $('#pythonCheck').css('color','rgb(108, 123, 149)');
-                        $('#sqlCheck').css('color','rgb(108, 123, 149)');
-                        $('#phpCheck').css('color','rgb(108, 123, 149)');
-                        $('#jqueryCheck').css('color','rgb(108, 123, 149)');
-                        break;
 
                 }
 		$('#thingsUsed').hide();
@@ -262,8 +251,8 @@ $(document).ready(function () {
                 case "flRole":
                     activateExp("flRole");
                     break;
-                case "frontDevRole":
-                    activateExp("frontDevRole");
+                case "kwRole":
+                    activateExp("kwRole");
                     break;
                 case "wgRole":
                     activateExp("wgRole");
@@ -281,8 +270,8 @@ $(document).ready(function () {
                 case "flRole":
                     deactivateExp("flRole");
                     break;
-                case "frontDevRole":
-                    deactivateExp("frontDevRole");
+                case "kwRole":
+                    deactivateExp("kwRole");
                     break;
                 case "wgRole":
                     deactivateExp("wgRole");
@@ -296,41 +285,56 @@ $(document).ready(function () {
             }
     } );
 
-            //hover over role functionalities
-            $('#flRole').hover(function(){
-                activateExp("flRole");
-            }, 
-                               function() {
-                deactivateExp("flRole");
-            });
+	//hover over role functionalities
+	$('#flRole').hover(function(){
+		activateExp("flRole");
+	},
+					   function() {
+		deactivateExp("flRole");
+	});
 
-            $('#frontDevRole').hover(function(){
-                activateExp("frontDevRole");
-            }, 
-                                     function() {
-                deactivateExp("frontDevRole");
-            });
+	$('#kwRole').hover(function(){
+		activateExp("kwRole");
+	},
+							 function() {
+		deactivateExp("kwRole");
+	});
 
-            $('#wgRole').hover(function(){
-                activateExp("wgRole");
-            }, 
-                               function() {
-                deactivateExp("wgRole");
-            });
+	$('#wgRole').hover(function(){
+		activateExp("wgRole");
+	},
+					   function() {
+		deactivateExp("wgRole");
+	});
 
-            $('#tmxRole').hover(function(){
-                activateExp("tmxRole");
-            }, 
-                                function() {
-                deactivateExp("tmxRole");
-            });
+	$('#tmxRole').hover(function(){
+		activateExp("tmxRole");
+	},
+						function() {
+		deactivateExp("tmxRole");
+	});
 
-            $('#studyRole').hover(function(){
-                activateExp("studyRole");
-            }, 
-                                  function() {
-                deactivateExp("studyRole");
-            });
+	$('#studyRole').hover(function(){
+		activateExp("studyRole");
+	},
+						  function() {
+		deactivateExp("studyRole");
+	});
+
+	$('#cvEnBtn').hide();
+	$('#cvFrPhoto').hide();
+	$('#cvFrBtn').click(function(){
+		$('#cvFrPhoto').show();
+		$('#cvEnPhoto').hide();
+		$('#cvFrBtn').hide();
+		$('#cvEnBtn').show();
+	});
+	$('#cvEnBtn').click(function(){
+		$('#cvEnPhoto').show();
+		$('#cvFrPhoto').hide();
+		$('#cvEnBtn').hide();
+		$('#cvFrBtn').show();
+	});
  
 
 
@@ -367,6 +371,12 @@ $(document).ready(function () {
         event.preventDefault();
         window.open('https://instagram.com/iRy47');
     });
+
+	$('#gitLink').click(function(event){
+		event.preventDefault();
+		window.open('https://github.com/iry47');
+	});
+
 
 
 
