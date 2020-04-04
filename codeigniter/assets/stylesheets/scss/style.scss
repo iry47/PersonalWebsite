@@ -30,6 +30,27 @@ $white: rgb(255,255,223);
   src: url("https://www.ryanheadley.net/assets/fonts/DIN-Condensed-Bold.ttf") format("opentype");
 }
 
+//@font-face {
+//  font-family: "SpaceMono-Bold";
+//  src: url("http://localhost/~ryanheadley/PersonalWebsite/codeigniter/assets/fonts/SpaceMono-Bold.ttf") format("opentype");
+//}
+//@font-face {
+//  font-family: "SpaceMono-BoldItalic";
+//  src: url("http://localhost/~ryanheadley/PersonalWebsite/codeigniter/assets/fonts/SpaceMono-BoldItalic.ttf") format("opentype");
+//}
+//@font-face {
+//  font-family: "SpaceMono-Italic";
+//  src: url("http://localhost/~ryanheadley/PersonalWebsite/codeigniter/assets/fonts/SpaceMono-Italic.ttf") format("opentype");
+//}
+//@font-face {
+//  font-family: "SpaceMono-Regular";
+//  src: url("http://localhost/~ryanheadley/PersonalWebsite/codeigniter/assets/fonts/SpaceMono-Regular.ttf") format("opentype");
+//}
+//@font-face {
+//  font-family: "DIN-Condensed-Bold";
+//  src: url("http://localhost/~ryanheadley/PersonalWebsite/codeigniter/assets/fonts/DIN-Condensed-Bold.ttf") format("opentype");
+//}
+
 
 html{
   overflow-x: hidden;
@@ -259,6 +280,7 @@ i{
   font-size: 22px;
   color: $light_gray;
   margin-bottom: 10px !important;
+  text-transform: uppercase;
 }
 .languagesDiv{
   margin-top: 25px;
@@ -283,8 +305,15 @@ i{
 }
 .modal-body{
   padding: 0 !important;
+  background-color: black;
+
   img{
 	max-width: 100%;
+  }
+  .insta-caption{
+	max-width: 80%;
+	margin: 20px auto;
+	text-align: left;
   }
 }
 .open{
@@ -364,10 +393,27 @@ i{
 #experience{
   min-height: 90vh !important;
 
+  #hover4Info{
+	font-family: SpaceMono-Regular;
+	margin-left: 15px;
+  }
+  #cvBtn{
+	display: block;
+	margin-bottom: 25px;
+	margin-left: 5px;
+
+	span{
+	  word-spacing: 4px;
+	  padding: 0 5px;
+	}
+  }
+
   .portfolio {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	max-width: 999px;
+	margin: 0 auto;
 
 	.portfolio-item {
 	  display: inline-block;
@@ -384,6 +430,7 @@ i{
 	.portfolio-image {
 	  background-position: center;
 	  background-repeat: no-repeat;
+	  background-color:white;
 	  background-size: cover;
 	  height: 150px;
 	  width: 150px;
@@ -407,6 +454,8 @@ i{
 	  font-size: 14px;
 	}
 	.btn{
+	  text-transform: uppercase;
+
 	  i{
 		margin-left: 10px;
 	  }
@@ -526,6 +575,10 @@ i{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		.blogButton{
+		  text-transform: uppercase;
+		}
 	  }
 
 	  .list-title {
@@ -555,6 +608,9 @@ i{
   background-position: center;
   padding-top: 0;
 
+  #contactSubTitle{
+	color: $dark_gray !important;
+  }
   .input-group{
 	margin: 10px 0;
   }
@@ -586,7 +642,28 @@ i{
   }
 
 }
+#cvHeader{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
 
+  #cvFrBtn{
+	background-image: linear-gradient(to right, blue, white, red);
+	padding: 5px;
+
+	a{
+	  color: black !important;
+	}
+  }
+  #cvEnBtn{
+	background-image: linear-gradient(to right, red, white, red, white, red);
+	padding: 5px;
+
+	a{
+	  color: black !important;
+	}
+  }
+}
 #socialLinks{
   i{
 	font-size: 32px;
@@ -605,8 +682,24 @@ i{
  */
 
 @media screen and (max-width:480px){
-  #instaFeed > div:nth-child(n+7){
+  #instaFeed{
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  #instaFeed > a:nth-child(n+8){
 	display: none;
+  }
+  .instapic{
+	width: 42vw;
+	margin: 10px;
+
+	img{
+	  width: 100% !important;
+	  height: 100% !important;
+	}
   }
   #menu{
 	display: block !important;
@@ -749,14 +842,21 @@ i{
 	}
   }
   #contact{
-	padding: 300px 0 0;
+	padding: 0;
   }
   #contactText{
 	color: $dark_gray;
   }
 }
 
-
+@media screen and (min-width: 996px){
+  .travel-container{
+	#travelText{
+	  width: 110%;
+	  font-size: 16px;
+	}
+  }
+}
 @media screen and (min-width: 1200px){
   .logo{
 	width: 150px;
@@ -813,6 +913,12 @@ i{
   .instapic img{
 	width: 150px;
 	height: 150px;
+  }
+  .travel-container{
+	#travelText{
+	  width: 100%;
+	  font-size: 18px;
+	}
   }
   #contact {
 	#contactArticle {
